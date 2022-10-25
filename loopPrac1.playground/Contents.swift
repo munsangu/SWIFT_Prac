@@ -28,7 +28,6 @@ for a in 1...5 {
         if(a > b) {
             print("😁",terminator: "")
         }
-        continue
     }
     print()
 }

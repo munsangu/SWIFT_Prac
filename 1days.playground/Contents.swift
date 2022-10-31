@@ -75,6 +75,8 @@ res2 = ax / bx
 res2 = ax % bx
 //print(res2)
 
+var zxc = Double(4 / 5) // 0.0
+var vcxc = Double(4) / Double(5) // 0.8
 
 var lotto = Float.random(in: 1.0...45.0) // Int(Float).random(in: 범위) -> 범위 내 숫자 임의로
 // print(lotto)
@@ -284,3 +286,21 @@ while num < 11 {
     num += 1
 }
 print(sum) // 55
+
+// Xcode 단축키
+CMD + SHIFT + J : 열려있는 파일을 프로젝트 트리에서 보여주기
+CMD + SHIFT + D 또는 Y: 디버깅 윈도우 열기/닫기 토글
+CTRL + 1 : 현재 파일 관련 추가 메뉴 (find caller, callee)
+CTRL + 6 : 현재 파일 요약 (method, variable list)
+CMD + click: 정의로 이동
+CMD + OPT + click: 정의로 이동하되 현재 창 반대편에 열기
+CTRL + CMD + 왼쪽 / 오른쪽: 히스토리 이전/다음 이동
+CMD + SHIFT + F: 전체 파일 스트링 검색
+CMD + SHIFT + O: 파일 검색창 오픈
+검색된 파일 선택시 OPT + Enter: 현재창 반대편에 열기
+검색된 파일 선택시 OPT + SHIFT + Enter: 창 고르기
+CMD + R: 실행
+CMD + SHIF + K: 클린
+CMD + 1 … 9: 왼쪽 사이드바의 탭 선택-
+CMD + CTRL + E: 특정 단어 선택 후 누르면 현재 파일내 동일 단어를 일괄 편집 (모든 파일을 분석해서 업데이트해주는 refactor와는 다름에 주의)
+CMD + OPT + 왼쪽 / 오른쪽: 현재 커서가 위치한 블록 접기/펼치기 (코드 양이 많을때 불필요한 메서드나 nesting된 블록을 접어놓고 보기 좋음)

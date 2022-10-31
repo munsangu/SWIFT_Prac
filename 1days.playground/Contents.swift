@@ -75,7 +75,6 @@ res2 = ax / bx
 res2 = ax % bx
 //print(res2)
 
-// 0...50 ~= rangex // 범위연산자, 패턴매칭 연산자
 
 var lotto = Float.random(in: 1.0...45.0) // Int(Float).random(in: 범위) -> 범위 내 숫자 임의로
 // print(lotto)
@@ -208,3 +207,80 @@ case (let q, let p):
 // 삼항연산자
 var xz = 50
 xz > 100 ? print("응") : print("아니야")
+
+// 범위연산자
+
+// 1. Closed Range Operator, One-Sided Ranges
+let rang = 1 ... 10
+let rang2 = 1...
+// let rang2 = 1 ... Expected expression after operator (Error)
+let rang3 = ...10
+// let rang3 = ... 10 Expected expression after operator (Error)
+
+// 2. Half-Open Range Operator, One-Sided Ranges
+let rangH = 1 ..< 10
+// let rangH2 = 1 ..<= 10 사용불가
+let rangH3 = ..<10
+//let rangH3 = ..< 10 Expected expression after operator (Error)
+
+for i in 1...5 {
+    print("\(i)번째 출력")
+}
+
+let avengers = ["Ironman", "Hurk", "Thor"]
+let cnt = avengers.count
+for j in 0..<cnt {
+    print("\(j + 1) HERO is \(avengers[j])")
+}
+for hr in avengers[...2] {
+    print(hr)
+}
+
+var myAge = 29
+switch myAge {
+case 10...19:
+    print("그대는 10대")
+case 20...29:
+    print("그대는 20대")
+case 30...39:
+    print("그대는 30대")
+default:
+    print("오우...")
+}
+
+// 패턴매칭 연산자 ~= 특정 범위내에 해당 숫자의 유무를 true / false 로 표현
+// SWIFT에서는 -10<=x<10 사용 불가
+
+let fux = 1...10
+fux ~= 5 // true
+fux ~= 20 // false
+
+// _ 는 생략의 의미를 가지고 있음
+for _ in 0...5 {
+    print("*")
+}
+for boxs in avengers {
+    print(boxs)
+}
+
+// 참고용 함수
+
+// reversed() -> 역순으로
+for number in (1...5).reversed() {
+    print(number)
+}
+
+//stride(from: <#T##Strideable#>, through: <#T##Strideable#>, by: <#T##Comparable & SignedNumeric#>)
+let odd = stride(from: 1, through: 14, by: 2)
+for vcc in odd {
+    print(vcc)
+}
+
+// while
+var sum = 0
+var num = 0
+while num < 11 {
+    sum+=num
+    num += 1
+}
+print(sum) // 55

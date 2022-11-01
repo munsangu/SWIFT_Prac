@@ -287,6 +287,44 @@ while num < 11 {
 }
 print(sum) // 55
 
+// repeat - while
+var idx = 0
+repeat {
+    print("\(idx + 1)번째 출력")
+    idx += 1
+} while idx < 10
+
+// continue, break
+
+//for num in 1...20 {
+//    if (num % 2 == 0) {
+//        print("\(num)은 짝수")
+//    }
+//}
+
+//for num in 1...20 {
+//    if (num % 2 == 0) {
+//        print("\(num)은 짝수")
+//        continue
+//    }
+//}
+//
+//for num in 1...20 {
+//    if (num % 2 == 0) {
+//        print("\(num)은 짝수")
+//        break
+//    }
+//}
+
+
+// scope(범위)
+// Global Scope vs Local Scope
+// 변수에 접근할 수 있는 범위가 다름
+// 메모리에 존재하는 시간이 다름
+// { } 내에서 { } 밖에 있는 변수에는 접근 가능하지만 반대의 경우에는 불가능
+// Global Scope는 최초 선언 후, 메모리가 종료될 때까지는 계속 남아있음
+// for {}, func ... {} 등은 해당 건이 실행될 때 메모리에 생성되다가 완료되면 사라지므로 { } 안에 선언된 변수는 Global 활용이 불가능
+
 // Xcode 단축키
 CMD + SHIFT + J : 열려있는 파일을 프로젝트 트리에서 보여주기
 CMD + SHIFT + D 또는 Y: 디버깅 윈도우 열기/닫기 토글

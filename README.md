@@ -1,4 +1,4 @@
-# First_iOS 
+# [First_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyFirstiOS)
 
 <p align="center"><img src="https://user-images.githubusercontent.com/51852940/199656676-50c44c8e-0e65-4d66-a384-f23ec636a65c.gif"></p>
 <br>
@@ -6,7 +6,7 @@
 버튼 클릭 시, Label의 몇 몇 속성들이 바뀌는 화면을 구현
 </div>
 
-# Second_iOS
+# [Second_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MySecondiOS)
 <p align="center"><img src="https://user-images.githubusercontent.com/51852940/199876136-a1b885ad-e35e-4007-898e-2f9d337623f3.gif"></p>
 <br>
 <div align="center">

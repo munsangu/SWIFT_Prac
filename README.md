@@ -14,7 +14,7 @@
 </div>
 
 # <div align="center">[Third_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyThirdiOS)</div>
-<p align="center"><img src="https://user-images.githubusercontent.com/51852940/199876136-a1b885ad-e35e-4007-898e-2f9d337623f3.gif"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/200005971-64b0f692-c75d-474d-971a-66dcd515d872.gif"></p>
 <br>
 <div align="center">
 가위 / 바위 / 버튼을 누르고, SELECT 버튼을 누르면 컴퓨터와 가위 바위 보를 하고 승패 여부를 최상단에 노출, RESET 버튼을 누르면 컴퓨터 및 사용자 모두 준비상태로 전환

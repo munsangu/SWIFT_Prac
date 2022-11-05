@@ -19,3 +19,10 @@
 <div align="center">
 가위 / 바위 / 버튼을 누르고, SELECT 버튼을 누르면 컴퓨터와 가위 바위 보를 하고 승패 여부를 최상단에 노출, RESET 버튼을 누르면 컴퓨터 및 사용자 모두 준비상태로 전환
 </div>
+
+# <div align="center">[Fourth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyFourthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/200098556-c692dafb-2054-41e4-9a2a-4a0a46f62da5.gif"></p>
+<br>
+<div align="center">
+컴퓨터가 선택한 숫자를 맞추는 게임
+</div>

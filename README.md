@@ -35,7 +35,7 @@
 </div>
 
 # <div align="center">[Sixth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MySixthiOS)</div>
-<p align="center"><img src="https://user-images.githubusercontent.com/51852940/205646505-8b06c5a9-d61d-4dab-a768-e595c917a930.gif"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/205682526-8f9d9103-e695-4f3b-8023-1ddc24339178.gif"></p>
 <br>
 <div align="center">
 앱 실행 시, 키보드 노출 / 글자수 10자 제한 / Done 버튼 및 다른 영역 클릭 시 키보드 닫기

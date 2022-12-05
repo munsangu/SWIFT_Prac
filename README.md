@@ -27,7 +27,7 @@
 컴퓨터가 선택한 숫자를 맞추는 게임
 </div>
 
-# <div align="center">[Fourth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyFifthiOS)</div>
+# <div align="center">[Fifth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyFifthiOS)</div>
 <p align="center"><img src="https://user-images.githubusercontent.com/51852940/200098556-c692dafb-2054-41e4-9a2a-4a0a46f62da5.gif"></p>
 <br>
 <div align="center">

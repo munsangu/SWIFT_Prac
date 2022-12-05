@@ -33,3 +33,10 @@
 <div align="center">
 0 ~ 60초 사이의 타이머를 설정하고, START 버튼을 누르면 1초씩 슬라이드 및 레이블이 바뀌며 0초가 되면 알림이 울림, 도중에 RESET을 누르면 초기 화면으로 되돌아감
 </div>
+
+# <div align="center">[Sixth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MySixthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/205646505-8b06c5a9-d61d-4dab-a768-e595c917a930.gif"></p>
+<br>
+<div align="center">
+앱 실행 시, 키보드 노출 / 글자수 10자 제한 / Done 버튼 및 다른 영역 클릭 시 키보드 닫기
+</div>

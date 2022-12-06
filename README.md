@@ -40,3 +40,11 @@
 <div align="center">
 앱 실행 시, 키보드 노출 / 글자수 10자 제한 / Done 버튼 및 다른 영역 클릭 시 키보드 닫기
 </div>
+
+# <div align="center">[Seventh_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MySeventhiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/206033868-f13acedf-d9cf-46cf-91a7-db44dae013cd.gif"></p>
+<br>
+<div align="center">
+각 텍스트필드 클릭 시 라벨이 위로 이동, 클릭 시 키보드 노출, 비밀번호의 경우 보호 기능, 표시 클릭 시 입력한 비밀번호 노출, 비밀번호 재설정 클릭 시 알림창, 등 
+</div>
+

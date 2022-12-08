@@ -48,3 +48,9 @@
 각 텍스트필드 클릭 시 라벨이 위로 이동, 클릭 시 키보드 노출, 비밀번호의 경우 보호 기능, 표시 클릭 시 입력한 비밀번호 노출, 비밀번호 재설정 클릭 시 알림창, 등 
 </div>
 
+# <div align="center">[Eighth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyEighthiOS/MyEighthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/206391037-8422c122-4006-49a4-8260-e7bb43a8e1f2.gif"></p>
+<br>
+<div align="center">
+BMI 계산 어플
+</div>

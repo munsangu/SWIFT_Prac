@@ -54,3 +54,11 @@
 <div align="center">
 BMI 계산 어플
 </div>
+
+# <div align="center">[Ninth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyNinthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/207037620-2a73e961-bdd2-4b5a-8944-7cecc7be3456.gif"></p>
+<br>
+<div align="center">
+랜덤 명언 생성 어플
+</div>
+

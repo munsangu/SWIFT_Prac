@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyEleventhiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5Z-u1-ooV">
+                                <rect key="frame" x="24" y="71" width="327" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9sa-4d-aLa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AT2-14-fZ1">
+                                <rect key="frame" x="24" y="245" width="327" height="509"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zmT-Df-AnI">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="437"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="62T-pA-aBt">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="81"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qF6-hQ-0rL" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="245" height="81"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="AC">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clearBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zr4-jr-Vwm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r89-ZW-qsh" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="246" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="r89-ZW-qsh" secondAttribute="height" id="bsf-W3-Fc0"/>
+                                                            <constraint firstAttribute="width" secondItem="r89-ZW-qsh" secondAttribute="height" id="icI-cW-RLV"/>
+                                                            <constraint firstAttribute="width" secondItem="r89-ZW-qsh" secondAttribute="height" multiplier="1:1" id="uAx-B9-vSM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="bsf-W3-Fc0"/>
+                                                                <exclude reference="uAx-B9-vSM"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="divideBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Upp-RP-j7U"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Crw-Xz-auf">
+                                                <rect key="frame" x="0.0" y="89" width="327" height="81"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdy-Z9-oYt" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Vdy-Z9-oYt" secondAttribute="height" multiplier="1:1" id="6ck-JS-rcc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zzf-6d-47h"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4m-ew-YFW" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="82" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="M4m-ew-YFW" secondAttribute="height" multiplier="1:1" id="4nD-6J-zS7"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zQ-xd-AHf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We9-ms-i4d" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="164" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="We9-ms-i4d" secondAttribute="height" multiplier="1:1" id="uQE-62-tWV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfi-ct-XAz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-ko-muZ" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="246" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="1ne-ko-muZ" secondAttribute="height" multiplier="1:1" id="lWZ-dB-dTu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="×">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="multipleBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kok-SN-KQN"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xy7-7b-gwF">
+                                                <rect key="frame" x="0.0" y="178" width="327" height="81"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAk-mQ-ijA" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="bAk-mQ-ijA" secondAttribute="height" multiplier="1:1" id="6ov-qJ-k3m"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="af9-hy-s6W"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-ee-RJb" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="82" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Ej2-ee-RJb" secondAttribute="height" multiplier="1:1" id="xDh-JF-h5Z"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ga8-FE-yUZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY5-9Q-MXT" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="164" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="vY5-9Q-MXT" secondAttribute="height" multiplier="1:1" id="Gq5-tG-j4J"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Die-Ej-T0K"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL2-vM-iAB" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="246" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="DL2-vM-iAB" secondAttribute="height" multiplier="1:1" id="mrj-CG-z6h"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="substractBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VeF-NM-tEf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yV1-CD-HVl">
+                                                <rect key="frame" x="0.0" y="267" width="327" height="81"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbj-vu-248" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="bbj-vu-248" secondAttribute="height" multiplier="1:1" id="emC-ch-qpj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JK5-Wq-8iq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygX-Y6-XO6" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="82" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ygX-Y6-XO6" secondAttribute="height" multiplier="1:1" id="bMv-1E-6CM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YFM-vp-35r"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jY-Lk-cft" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="164" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="3jY-Lk-cft" secondAttribute="height" multiplier="1:1" id="7Yf-G8-yr9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iC2-QK-mlo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1K-R3-L8j" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="246" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="M1K-R3-L8j" secondAttribute="height" multiplier="1:1" id="AEg-vq-ddN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="plusBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TjR-7r-mK0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Znh-vu-hJg">
+                                                <rect key="frame" x="0.0" y="356" width="327" height="81"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmL-zt-0eu" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="WmL-zt-0eu" secondAttribute="height" multiplier="1:1" id="We6-qk-ETj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="We6-qk-ETj"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0X-ct-1pe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQW-6l-jNy" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="164" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="sQW-6l-jNy" secondAttribute="height" multiplier="1:1" id="3Ay-mW-8wD"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="dotBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O1I-CV-cED"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVd-M1-H7S" customClass="RoundNumBTN" customModule="MyEleventhiOS" customModuleProvider="target">
+                                                        <rect key="frame" x="246" y="0.0" width="81" height="81"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="MVd-M1-H7S" secondAttribute="height" multiplier="1:1" id="avE-7v-0Ny"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="resultBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehh-ZI-k1P"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Znh-vu-hJg" firstAttribute="height" secondItem="62T-pA-aBt" secondAttribute="height" id="Cac-gs-Ske"/>
+                                            <constraint firstItem="qF6-hQ-0rL" firstAttribute="trailing" secondItem="We9-ms-i4d" secondAttribute="trailing" id="FLv-MW-1rE"/>
+                                            <constraint firstItem="Crw-Xz-auf" firstAttribute="height" secondItem="62T-pA-aBt" secondAttribute="height" id="LhV-Uf-LfN"/>
+                                            <constraint firstItem="WmL-zt-0eu" firstAttribute="trailing" secondItem="ygX-Y6-XO6" secondAttribute="trailing" id="NOs-tW-In8"/>
+                                            <constraint firstItem="yV1-CD-HVl" firstAttribute="height" secondItem="62T-pA-aBt" secondAttribute="height" id="Qop-fm-z6A"/>
+                                            <constraint firstItem="Xy7-7b-gwF" firstAttribute="height" secondItem="62T-pA-aBt" secondAttribute="height" id="bme-wr-z9W"/>
+                                            <constraint firstItem="qF6-hQ-0rL" firstAttribute="trailing" secondItem="We9-ms-i4d" secondAttribute="trailing" id="eRc-1v-nrK"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="FLv-MW-1rE"/>
+                                                <exclude reference="LhV-Uf-LfN"/>
+                                                <exclude reference="bme-wr-z9W"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zmT-Df-AnI" firstAttribute="leading" secondItem="AT2-14-fZ1" secondAttribute="leading" id="1L4-jn-BJt"/>
+                                    <constraint firstAttribute="trailing" secondItem="zmT-Df-AnI" secondAttribute="trailing" id="1M2-le-JZH"/>
+                                    <constraint firstItem="zmT-Df-AnI" firstAttribute="top" secondItem="AT2-14-fZ1" secondAttribute="top" id="Lwg-pQ-W2i"/>
+                                    <constraint firstAttribute="trailing" secondItem="zmT-Df-AnI" secondAttribute="trailing" id="ScC-y8-em5"/>
+                                    <constraint firstItem="zmT-Df-AnI" firstAttribute="top" secondItem="AT2-14-fZ1" secondAttribute="top" id="kJj-Ki-GCO"/>
+                                    <constraint firstItem="zmT-Df-AnI" firstAttribute="leading" secondItem="AT2-14-fZ1" secondAttribute="leading" id="wlj-93-34Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="zmT-Df-AnI" secondAttribute="bottom" priority="750" id="y5h-uF-nOc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g5Z-u1-ooV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="GFr-hJ-i2p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AT2-14-fZ1" secondAttribute="trailing" constant="24" id="LW9-5A-cVv"/>
+                            <constraint firstItem="AT2-14-fZ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Mat-fo-cPW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g5Z-u1-ooV" secondAttribute="trailing" constant="24" id="ShH-R2-Yab"/>
+                            <constraint firstItem="g5Z-u1-ooV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="W0T-Ch-hgw"/>
+                            <constraint firstItem="AT2-14-fZ1" firstAttribute="top" secondItem="g5Z-u1-ooV" secondAttribute="bottom" constant="24" id="t73-la-GPc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AT2-14-fZ1" secondAttribute="bottom" constant="24" id="vGr-Q9-EGc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="divideBTN" destination="r89-ZW-qsh" id="nJs-9r-qg6"/>
+                        <outlet property="multipleBTN" destination="1ne-ko-muZ" id="YWe-5C-nDW"/>
+                        <outlet property="numOutputLabel" destination="g5Z-u1-ooV" id="lfF-yz-xEl"/>
+                        <outlet property="plusBTN" destination="M1K-R3-L8j" id="xfv-5G-ksH"/>
+                        <outlet property="substractBTN" destination="DL2-vM-iAB" id="Foq-oH-fk3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1ne-ko-muZ">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="3jY-Lk-cft">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="DL2-vM-iAB">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="Ej2-ee-RJb">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="M1K-R3-L8j">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="M4m-ew-YFW">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="MVd-M1-H7S">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="Vdy-Z9-oYt">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="We9-ms-i4d">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="WmL-zt-0eu">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="bAk-mQ-ijA">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="bbj-vu-248">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="qF6-hQ-0rL">
+            <size key="intrinsicContentSize" width="42" height="48"/>
+        </designable>
+        <designable name="r89-ZW-qsh">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="sQW-6l-jNy">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="vY5-9Q-MXT">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="ygX-Y6-XO6">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

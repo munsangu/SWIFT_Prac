@@ -62,3 +62,10 @@ BMI 계산 어플
 랜덤 명언 생성 어플
 </div>
 
+# <div align="center">[Tenth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyTenthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/207298032-e86d77cc-ce6a-4e32-b83c-9f3f33892a42.gif"></p>
+<br>
+<div align="center">
+배경색 및 글자색 변경 어플, 설정에서 바꾼 것으로 적용되며, 다시 설정으로 돌아오면 입력 및 선택한 값 유지
+</div>
+

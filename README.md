@@ -83,3 +83,10 @@ BMI 계산 어플
 To Do List 어플(추가, 삭제, 순서 변경, 앱 재시동 시에도 데이터 유지, 체크유무)
 </div>
 
+# <div align="center">[Thirtheenth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyThirtheenthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/207803296-78820809-c24d-47d6-8d9c-d8abfdd39c02.gif"></p>
+<br>
+<div align="center">
+뽀모도로 타이머
+</div>
+

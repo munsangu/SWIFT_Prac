@@ -97,3 +97,10 @@ To Do List 어플(추가, 삭제, 순서 변경, 앱 재시동 시에도 데이�
 Open API를 활용한 날씨 조회
 </div>
 
+# <div align="center">[Seventeenth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MySeventeenthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/208240433-7bc6de64-b383-4c4f-91ef-2cec4474a07e.gif"></p>
+<br>
+<div align="center">
+Covid-19 현황판 및 세부사항
+</div>
+

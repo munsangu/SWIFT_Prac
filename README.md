@@ -104,3 +104,9 @@ Open API를 활용한 날씨 조회
 Covid-19 현황판 및 세부사항
 </div>
 
+# <div align="center">[Eighteenth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyEighteenthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/208300583-efaa9c9c-3b4a-499b-a824-14088452c767.gif"></p>
+<br>
+<div align="center">
+일기장(즐겨찾기 기능, 수정, 삭제, 추가)
+</div>

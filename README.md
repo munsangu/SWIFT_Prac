@@ -110,3 +110,12 @@ Covid-19 현황판 및 세부사항
 <div align="center">
 일기장(즐겨찾기 기능, 수정, 삭제, 추가)
 </div>
+
+# <div align="center">[Nineteenth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyNineteenthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/208329747-2dd7667c-a946-496e-831e-ce9eac55bc09.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/208329824-b92afc82-daf1-42b5-87b8-f100807be6a8.png"></p>
+<br>
+<div align="center">
+Remote Push Notification
+</div>
+

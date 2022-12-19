@@ -119,3 +119,10 @@ Covid-19 현황판 및 세부사항
 Remote Push Notification
 </div>
 
+# <div align="center">[Twentiesth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyTwentiesthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/208368326-b098f9b7-c83e-4e34-ba28-4938ef106638.gif"></p>
+<br>
+<div align="center">
+Local Push Notification
+</div>
+

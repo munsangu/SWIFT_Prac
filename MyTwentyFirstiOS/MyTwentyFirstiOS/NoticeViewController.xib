@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoticeViewController" customModule="MyTwentyFirstiOS" customModuleProvider="target">
+            <connections>
+                <outlet property="dateLabel" destination="lJH-Ey-tmI" id="DHD-bc-qsR"/>
+                <outlet property="detailLabel" destination="gpc-NW-ygj" id="rpY-UC-qyb"/>
+                <outlet property="noticeView" destination="exJ-zt-RXM" id="x81-dl-0ye"/>
+                <outlet property="titleLabel" destination="JqP-8N-9is" id="CVf-3r-SXQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exJ-zt-RXM">
+                    <rect key="frame" x="46.666666666666657" y="238.66666666666663" width="300" height="400"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LhU-cw-HdK">
+                            <rect key="frame" x="20" y="20.000000000000028" width="260" height="360"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm3-xD-0Z0">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="32.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here's UR guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqP-8N-9is">
+                                    <rect key="frame" x="0.0" y="42.333333333333314" width="260" height="65"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="gpc-NW-ygj">
+                                    <rect key="frame" x="0.0" y="117.33333333333331" width="260" height="67.666666666666686"/>
+                                    <string key="text">Please refer to the service
+</string>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and time of inspection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykf-Us-UZe">
+                                    <rect key="frame" x="0.0" y="195" width="260" height="28.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22.12.20(Tue) 00:00-03:00(3 hours)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJH-Ey-tmI">
+                                    <rect key="frame" x="0.0" y="233.66666666666666" width="260" height="56.333333333333343"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHy-hs-ytb">
+                                    <rect key="frame" x="0.0" y="299.99999999999994" width="260" height="60"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="zhx-Dz-yVX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Okay"/>
+                                    <connections>
+                                        <action selector="okayBTN:" destination="-1" eventType="touchUpInside" id="iBP-Jb-IrM"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="fHy-hs-ytb" secondAttribute="trailing" id="aII-vV-ulb"/>
+                                <constraint firstItem="fHy-hs-ytb" firstAttribute="leading" secondItem="LhU-cw-HdK" secondAttribute="leading" id="r3Z-Ik-nze"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="LhU-cw-HdK" secondAttribute="bottom" constant="20" id="0bK-Iu-6wM"/>
+                        <constraint firstAttribute="trailing" secondItem="LhU-cw-HdK" secondAttribute="trailing" constant="20" id="7IJ-nw-KYo"/>
+                        <constraint firstAttribute="height" constant="400" id="elg-bT-8Si"/>
+                        <constraint firstItem="LhU-cw-HdK" firstAttribute="leading" secondItem="exJ-zt-RXM" secondAttribute="leading" constant="20" id="f5T-ku-Qt9"/>
+                        <constraint firstAttribute="width" constant="300" id="kgf-SG-YHI"/>
+                        <constraint firstItem="LhU-cw-HdK" firstAttribute="top" secondItem="exJ-zt-RXM" secondAttribute="top" constant="20" id="qcl-vL-ggI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="exJ-zt-RXM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fov-jY-Eed"/>
+                <constraint firstItem="exJ-zt-RXM" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="k6J-8E-XrW"/>
+            </constraints>
+            <point key="canvasLocation" x="1" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

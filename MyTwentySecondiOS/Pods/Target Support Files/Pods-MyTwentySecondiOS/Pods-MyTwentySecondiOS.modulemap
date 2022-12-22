@@ -1,0 +1,6 @@
+framework module Pods_MyTwentySecondiOS {
+  umbrella header "Pods-MyTwentySecondiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

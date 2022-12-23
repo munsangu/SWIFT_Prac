@@ -83,11 +83,3 @@ Local Push Notification
 <div align="center">
 Firebase Remote Config & A/B Test
 </div>
-
-# <div align="center">[TwentyThird_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyTwentyThirdiOS)</div>
-<p align="center"><img src="https://user-images.githubusercontent.com/51852940/209349408-5971aed2-3bbe-46e2-9209-d734458bd119.gif"></p>
-<br>
-<div align="center">
-Xylophone
-</div>
-

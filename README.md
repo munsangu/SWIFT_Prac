@@ -84,9 +84,17 @@ Local Push Notification
 Firebase Remote Config & A/B Test
 </div>
 
-# <div align="center">[TwentyThird_iOS]</div>
+# <div align="center">[TwentyThird_iOS](https://hirodaegu.tistory.com/458)</div>
 <p align="center"><img src="https://user-images.githubusercontent.com/51852940/209349408-5971aed2-3bbe-46e2-9209-d734458bd119.gif"></p>
 <br>
 <div align="center">
 Xylophone
 </div>
+
+# <div align="center">[TwentyFourth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyTwentythirdiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/209434855-290f2b7f-e4de-4c8b-b31c-dd07f04bcfe7.gif"></p>
+<br>
+<div align="center">
+Egg Timer
+</div>
+

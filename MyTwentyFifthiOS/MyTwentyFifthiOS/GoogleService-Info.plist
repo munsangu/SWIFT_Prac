@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>864728819220-vbimnqt413hg6ng8a6bk5ls1cnjnu47o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.864728819220-vbimnqt413hg6ng8a6bk5ls1cnjnu47o</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD5-LmhFG8LqwUcX7XXJDBbzzWjdJmuSaA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>864728819220</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hirorich.MyTwentyFifthiOS</string>
+	<key>PROJECT_ID</key>
+	<string>fccreditcardlist</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fccreditcardlist.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:864728819220:ios:31618c5eee36f97eb9e901</string>
+</dict>
+</plist>

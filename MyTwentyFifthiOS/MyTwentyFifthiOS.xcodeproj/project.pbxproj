@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16657B042957FC2400932F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16657B032957FC2400932F52 /* AppDelegate.swift */; };
+		16657B062957FC2400932F52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16657B052957FC2400932F52 /* SceneDelegate.swift */; };
+		16657B0B2957FC2400932F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16657B092957FC2400932F52 /* Main.storyboard */; };
+		16657B0D2957FC2500932F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16657B0C2957FC2500932F52 /* Assets.xcassets */; };
+		16657B102957FC2500932F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16657B0E2957FC2500932F52 /* LaunchScreen.storyboard */; };
+		16657B182957FC5200932F52 /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16657B172957FC5200932F52 /* CardListViewController.swift */; };
+		16657B1A2957FD6500932F52 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16657B192957FD6500932F52 /* CreditCard.swift */; };
+		16657B1D2957FE3D00932F52 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16657B1B2957FE3D00932F52 /* CardListCell.swift */; };
+		16657B1E2957FE3D00932F52 /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16657B1C2957FE3D00932F52 /* CardListCell.xib */; };
+		16657B202958045D00932F52 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16657B1F2958045D00932F52 /* CardDetailViewController.swift */; };
+		16A8D1972958070C009E5E75 /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8D1962958070C009E5E75 /* money.json */; };
+		16A8D19929580D9A009E5E75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16A8D19829580D99009E5E75 /* GoogleService-Info.plist */; };
+		16A8D19B29581D11009E5E75 /* CreditCardDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8D19A29581D11009E5E75 /* CreditCardDummy.swift */; };
+		75E536223F38CCBC5013E6E9 /* Pods_MyTwentyFifthiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA9599D5539F775B99C6457 /* Pods_MyTwentyFifthiOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16657B002957FC2400932F52 /* MyTwentyFifthiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTwentyFifthiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16657B032957FC2400932F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16657B052957FC2400932F52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		16657B0A2957FC2400932F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16657B0C2957FC2500932F52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16657B0F2957FC2500932F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16657B112957FC2500932F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16657B172957FC5200932F52 /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		16657B192957FD6500932F52 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		16657B1B2957FE3D00932F52 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
+		16657B1C2957FE3D00932F52 /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
+		16657B1F2958045D00932F52 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		16A8D1962958070C009E5E75 /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = money.json; path = "../../패스트캠퍼스/30개 프로젝트/Part 3/Ch2_CreditCardList/money.json"; sourceTree = "<group>"; };
+		16A8D19829580D99009E5E75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16A8D19A29581D11009E5E75 /* CreditCardDummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDummy.swift; sourceTree = "<group>"; };
+		3EA9599D5539F775B99C6457 /* Pods_MyTwentyFifthiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTwentyFifthiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93698C623559F47E405F7392 /* Pods-MyTwentyFifthiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTwentyFifthiOS.debug.xcconfig"; path = "Target Support Files/Pods-MyTwentyFifthiOS/Pods-MyTwentyFifthiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D9162BE84C538AFB8BDE6917 /* Pods-MyTwentyFifthiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTwentyFifthiOS.release.xcconfig"; path = "Target Support Files/Pods-MyTwentyFifthiOS/Pods-MyTwentyFifthiOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16657AFD2957FC2400932F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E536223F38CCBC5013E6E9 /* Pods_MyTwentyFifthiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16657AF72957FC2400932F52 = {
+			isa = PBXGroup;
+			children = (
+				16657B022957FC2400932F52 /* MyTwentyFifthiOS */,
+				16657B012957FC2400932F52 /* Products */,
+				722F5017A3323F050ABA9218 /* Pods */,
+				EF4E8F67C30E031840946CC6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16657B012957FC2400932F52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16657B002957FC2400932F52 /* MyTwentyFifthiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16657B022957FC2400932F52 /* MyTwentyFifthiOS */ = {
+			isa = PBXGroup;
+			children = (
+				16657B032957FC2400932F52 /* AppDelegate.swift */,
+				16657B1F2958045D00932F52 /* CardDetailViewController.swift */,
+				16657B1B2957FE3D00932F52 /* CardListCell.swift */,
+				16657B1C2957FE3D00932F52 /* CardListCell.xib */,
+				16657B172957FC5200932F52 /* CardListViewController.swift */,
+				16657B192957FD6500932F52 /* CreditCard.swift */,
+				16A8D19A29581D11009E5E75 /* CreditCardDummy.swift */,
+				16657B052957FC2400932F52 /* SceneDelegate.swift */,
+				16657B092957FC2400932F52 /* Main.storyboard */,
+				16657B0C2957FC2500932F52 /* Assets.xcassets */,
+				16657B0E2957FC2500932F52 /* LaunchScreen.storyboard */,
+				16657B112957FC2500932F52 /* Info.plist */,
+				16A8D1962958070C009E5E75 /* money.json */,
+				16A8D19829580D99009E5E75 /* GoogleService-Info.plist */,
+			);
+			path = MyTwentyFifthiOS;
+			sourceTree = "<group>";
+		};
+		722F5017A3323F050ABA9218 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93698C623559F47E405F7392 /* Pods-MyTwentyFifthiOS.debug.xcconfig */,
+				D9162BE84C538AFB8BDE6917 /* Pods-MyTwentyFifthiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF4E8F67C30E031840946CC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EA9599D5539F775B99C6457 /* Pods_MyTwentyFifthiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16657AFF2957FC2400932F52 /* MyTwentyFifthiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16657B142957FC2500932F52 /* Build configuration list for PBXNativeTarget "MyTwentyFifthiOS" */;
+			buildPhases = (
+				B6FD63611BBA46DC708D50A6 /* [CP] Check Pods Manifest.lock */,
+				16657AFC2957FC2400932F52 /* Sources */,
+				16657AFD2957FC2400932F52 /* Frameworks */,
+				16657AFE2957FC2400932F52 /* Resources */,
+				3E745D755CF78F809A18FAC7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTwentyFifthiOS;
+			productName = MyTwentyFifthiOS;
+			productReference = 16657B002957FC2400932F52 /* MyTwentyFifthiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16657AF82957FC2400932F52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					16657AFF2957FC2400932F52 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 16657AFB2957FC2400932F52 /* Build configuration list for PBXProject "MyTwentyFifthiOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16657AF72957FC2400932F52;
+			productRefGroup = 16657B012957FC2400932F52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16657AFF2957FC2400932F52 /* MyTwentyFifthiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16657AFE2957FC2400932F52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16657B102957FC2500932F52 /* LaunchScreen.storyboard in Resources */,
+				16657B0D2957FC2500932F52 /* Assets.xcassets in Resources */,
+				16A8D1972958070C009E5E75 /* money.json in Resources */,
+				16657B0B2957FC2400932F52 /* Main.storyboard in Resources */,
+				16657B1E2957FE3D00932F52 /* CardListCell.xib in Resources */,
+				16A8D19929580D9A009E5E75 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E745D755CF78F809A18FAC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTwentyFifthiOS/Pods-MyTwentyFifthiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTwentyFifthiOS/Pods-MyTwentyFifthiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTwentyFifthiOS/Pods-MyTwentyFifthiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6FD63611BBA46DC708D50A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTwentyFifthiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16657AFC2957FC2400932F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16657B1A2957FD6500932F52 /* CreditCard.swift in Sources */,
+				16657B202958045D00932F52 /* CardDetailViewController.swift in Sources */,
+				16657B1D2957FE3D00932F52 /* CardListCell.swift in Sources */,
+				16657B182957FC5200932F52 /* CardListViewController.swift in Sources */,
+				16A8D19B29581D11009E5E75 /* CreditCardDummy.swift in Sources */,
+				16657B042957FC2400932F52 /* AppDelegate.swift in Sources */,
+				16657B062957FC2400932F52 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16657B092957FC2400932F52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16657B0A2957FC2400932F52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16657B0E2957FC2500932F52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16657B0F2957FC2500932F52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16657B122957FC2500932F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16657B132957FC2500932F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16657B152957FC2500932F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93698C623559F47E405F7392 /* Pods-MyTwentyFifthiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PG5FKL2L77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTwentyFifthiOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirorich.MyTwentyFifthiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		16657B162957FC2500932F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9162BE84C538AFB8BDE6917 /* Pods-MyTwentyFifthiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PG5FKL2L77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTwentyFifthiOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirorich.MyTwentyFifthiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16657AFB2957FC2400932F52 /* Build configuration list for PBXProject "MyTwentyFifthiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16657B122957FC2500932F52 /* Debug */,
+				16657B132957FC2500932F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16657B142957FC2500932F52 /* Build configuration list for PBXNativeTarget "MyTwentyFifthiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16657B152957FC2500932F52 /* Debug */,
+				16657B162957FC2500932F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16657AF82957FC2400932F52 /* Project object */;
+}

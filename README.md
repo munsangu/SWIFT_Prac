@@ -105,3 +105,10 @@ Egg Timer
 Credit Card List & Details
 </div>
 
+# <div align="center">[TwentySixth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyTwentySixthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/209607458-998ea014-b6a3-42a6-84ff-c75c93fea20d.gif"></p>
+<br>
+<div align="center">
+Netflix Main display(SnapKit, Only code)
+</div>
+

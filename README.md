@@ -119,3 +119,10 @@ Netflix Main display(SnapKit, Only code)
 Brewery(Kingfisher, Snapkit, PunkAPI, Postman, GCD)
 </div>
 
+# <div align="center">[TwentyEighth_iOS](https://github.com/munsangu/SWIFT_Prac/tree/main/MyTwentyEighthiOS)</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/51852940/210138662-c464a182-1d94-4414-a2d1-3dcc4812cd21.gif"></p>
+<br>
+<div align="center">
+Brewery(Kingfisher, Snapkit, PunkAPI, Postman, GCD)
+</div>
+

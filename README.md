@@ -123,6 +123,6 @@ Brewery(Kingfisher, Snapkit, PunkAPI, Postman, GCD)
 <p align="center"><img src="https://user-images.githubusercontent.com/51852940/210138662-c464a182-1d94-4414-a2d1-3dcc4812cd21.gif"></p>
 <br>
 <div align="center">
-Brewery(Kingfisher, Snapkit, PunkAPI, Postman, GCD)
+Covid-19 예방접종센터(SwiftUI, Combine, OpenAPI)
 </div>
 

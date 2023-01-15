@@ -6,5 +6,8 @@ target 'MessengerClone' do
   use_frameworks!
 
   # Pods for MessengerClone
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end

@@ -294,8 +294,9 @@
 				DEVELOPMENT_TEAM = PG5FKL2L77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = testBackgroundMODE/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자 위치 확인";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자 위치 추적";
 				INFOPLIST_KEY_NSLocationUsageDescription = "사용자 위치 확인";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자 위치 추적";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,8 +329,9 @@
 				DEVELOPMENT_TEAM = PG5FKL2L77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = testBackgroundMODE/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자 위치 확인";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자 위치 추적";
 				INFOPLIST_KEY_NSLocationUsageDescription = "사용자 위치 확인";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자 위치 추적";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

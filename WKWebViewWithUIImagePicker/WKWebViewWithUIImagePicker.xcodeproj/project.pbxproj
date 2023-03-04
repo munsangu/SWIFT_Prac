@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		169B731329B3229800912A6F /* MyURLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169B731229B3229800912A6F /* MyURLRequestConvertible.swift */; };
+		16C99C1829B31AEC006B651A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C99C1729B31AEC006B651A /* AppDelegate.swift */; };
+		16C99C1A29B31AEC006B651A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C99C1929B31AEC006B651A /* SceneDelegate.swift */; };
+		16C99C1C29B31AEC006B651A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C99C1B29B31AEC006B651A /* ViewController.swift */; };
+		16C99C1F29B31AEC006B651A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C99C1D29B31AEC006B651A /* Main.storyboard */; };
+		16C99C2129B31AED006B651A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C99C2029B31AED006B651A /* Assets.xcassets */; };
+		16C99C2429B31AED006B651A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C99C2229B31AED006B651A /* LaunchScreen.storyboard */; };
+		16E9E04929B37D5600A41458 /* FormDataInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E9E04829B37D5600A41458 /* FormDataInputStream.swift */; };
+		73D79BA1DE378BBBDEA4FC10 /* Pods_WKWebViewWithUIImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A78F2F9DFEA847824585B9B /* Pods_WKWebViewWithUIImagePicker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		169B731229B3229800912A6F /* MyURLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyURLRequestConvertible.swift; sourceTree = "<group>"; };
+		16C99C1429B31AEC006B651A /* WKWebViewWithUIImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewWithUIImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C99C1729B31AEC006B651A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16C99C1929B31AEC006B651A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		16C99C1B29B31AEC006B651A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16C99C1E29B31AEC006B651A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16C99C2029B31AED006B651A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16C99C2329B31AED006B651A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16C99C2529B31AED006B651A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E9E04829B37D5600A41458 /* FormDataInputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataInputStream.swift; sourceTree = "<group>"; };
+		4A78F2F9DFEA847824585B9B /* Pods_WKWebViewWithUIImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WKWebViewWithUIImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B80A488D61CBB648DBFAC49 /* Pods-WKWebViewWithUIImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewWithUIImagePicker.debug.xcconfig"; path = "Target Support Files/Pods-WKWebViewWithUIImagePicker/Pods-WKWebViewWithUIImagePicker.debug.xcconfig"; sourceTree = "<group>"; };
+		FE44BB474CF2A27813EE2E09 /* Pods-WKWebViewWithUIImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewWithUIImagePicker.release.xcconfig"; path = "Target Support Files/Pods-WKWebViewWithUIImagePicker/Pods-WKWebViewWithUIImagePicker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C99C1129B31AEC006B651A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D79BA1DE378BBBDEA4FC10 /* Pods_WKWebViewWithUIImagePicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C99C0B29B31AEC006B651A = {
+			isa = PBXGroup;
+			children = (
+				16C99C1629B31AEC006B651A /* WKWebViewWithUIImagePicker */,
+				16C99C1529B31AEC006B651A /* Products */,
+				BF46B3C55519780DBDCC452B /* Pods */,
+				8B91E7CCA399972C81AFF95C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16C99C1529B31AEC006B651A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16C99C1429B31AEC006B651A /* WKWebViewWithUIImagePicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16C99C1629B31AEC006B651A /* WKWebViewWithUIImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				16C99C1729B31AEC006B651A /* AppDelegate.swift */,
+				16C99C1929B31AEC006B651A /* SceneDelegate.swift */,
+				16C99C1B29B31AEC006B651A /* ViewController.swift */,
+				169B731229B3229800912A6F /* MyURLRequestConvertible.swift */,
+				16E9E04829B37D5600A41458 /* FormDataInputStream.swift */,
+				16C99C1D29B31AEC006B651A /* Main.storyboard */,
+				16C99C2029B31AED006B651A /* Assets.xcassets */,
+				16C99C2229B31AED006B651A /* LaunchScreen.storyboard */,
+				16C99C2529B31AED006B651A /* Info.plist */,
+			);
+			path = WKWebViewWithUIImagePicker;
+			sourceTree = "<group>";
+		};
+		8B91E7CCA399972C81AFF95C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A78F2F9DFEA847824585B9B /* Pods_WKWebViewWithUIImagePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF46B3C55519780DBDCC452B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B80A488D61CBB648DBFAC49 /* Pods-WKWebViewWithUIImagePicker.debug.xcconfig */,
+				FE44BB474CF2A27813EE2E09 /* Pods-WKWebViewWithUIImagePicker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16C99C1329B31AEC006B651A /* WKWebViewWithUIImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C99C2829B31AED006B651A /* Build configuration list for PBXNativeTarget "WKWebViewWithUIImagePicker" */;
+			buildPhases = (
+				5FB6C8AEECA47BB6D718804B /* [CP] Check Pods Manifest.lock */,
+				16C99C1029B31AEC006B651A /* Sources */,
+				16C99C1129B31AEC006B651A /* Frameworks */,
+				16C99C1229B31AEC006B651A /* Resources */,
+				4D1EC9E60E7F52DA4C1D1FDD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WKWebViewWithUIImagePicker;
+			productName = WKWebViewWithUIImagePicker;
+			productReference = 16C99C1429B31AEC006B651A /* WKWebViewWithUIImagePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C99C0C29B31AEC006B651A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					16C99C1329B31AEC006B651A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 16C99C0F29B31AEC006B651A /* Build configuration list for PBXProject "WKWebViewWithUIImagePicker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16C99C0B29B31AEC006B651A;
+			productRefGroup = 16C99C1529B31AEC006B651A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16C99C1329B31AEC006B651A /* WKWebViewWithUIImagePicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16C99C1229B31AEC006B651A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C99C2429B31AED006B651A /* LaunchScreen.storyboard in Resources */,
+				16C99C2129B31AED006B651A /* Assets.xcassets in Resources */,
+				16C99C1F29B31AEC006B651A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D1EC9E60E7F52DA4C1D1FDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WKWebViewWithUIImagePicker/Pods-WKWebViewWithUIImagePicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WKWebViewWithUIImagePicker/Pods-WKWebViewWithUIImagePicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WKWebViewWithUIImagePicker/Pods-WKWebViewWithUIImagePicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FB6C8AEECA47BB6D718804B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WKWebViewWithUIImagePicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C99C1029B31AEC006B651A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16E9E04929B37D5600A41458 /* FormDataInputStream.swift in Sources */,
+				16C99C1C29B31AEC006B651A /* ViewController.swift in Sources */,
+				16C99C1829B31AEC006B651A /* AppDelegate.swift in Sources */,
+				16C99C1A29B31AEC006B651A /* SceneDelegate.swift in Sources */,
+				169B731329B3229800912A6F /* MyURLRequestConvertible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16C99C1D29B31AEC006B651A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C99C1E29B31AEC006B651A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16C99C2229B31AED006B651A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C99C2329B31AED006B651A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16C99C2629B31AED006B651A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16C99C2729B31AED006B651A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16C99C2929B31AED006B651A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B80A488D61CBB648DBFAC49 /* Pods-WKWebViewWithUIImagePicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PG5FKL2L77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WKWebViewWithUIImagePicker/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirorich.WKWebViewWithUIImagePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		16C99C2A29B31AED006B651A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE44BB474CF2A27813EE2E09 /* Pods-WKWebViewWithUIImagePicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PG5FKL2L77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WKWebViewWithUIImagePicker/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirorich.WKWebViewWithUIImagePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16C99C0F29B31AEC006B651A /* Build configuration list for PBXProject "WKWebViewWithUIImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C99C2629B31AED006B651A /* Debug */,
+				16C99C2729B31AED006B651A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C99C2829B31AED006B651A /* Build configuration list for PBXNativeTarget "WKWebViewWithUIImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C99C2929B31AED006B651A /* Debug */,
+				16C99C2A29B31AED006B651A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16C99C0C29B31AEC006B651A /* Project object */;
+}

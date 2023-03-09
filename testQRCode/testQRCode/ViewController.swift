@@ -2,7 +2,7 @@ import UIKit
 import AVFoundation
 import QRCodeReader
 
-class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,9 +120,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         self.present(self.readerVC, animated: true, completion: nil)
         
     }
-    
-    
-    
+        
     // MARK: [QRCodeReaderViewController 대리자 메소드]
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
         print("")
@@ -189,4 +187,8 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         present(alert, animated: false, completion: nil)
     }
 
+}
+
+extension ViewController: QRCodeReaderViewControllerDelegate {
+    
 }

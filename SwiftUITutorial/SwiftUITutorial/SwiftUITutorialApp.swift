@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct SwiftUIWKWebViewApp: App {
+struct SwiftUITutorialApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

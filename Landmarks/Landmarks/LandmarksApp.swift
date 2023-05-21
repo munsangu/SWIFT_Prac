@@ -1,10 +1,3 @@
-//
-//  LandmarksApp.swift
-//  Landmarks
-//
-//  Created by 문상우 on 2023/05/16.
-//
-
 import SwiftUI
 
 @main
@@ -13,8 +6,15 @@ struct LandmarksApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(modelData)
+            NavigationView {
+                ContentView()
+                    .environmentObject(modelData)
+            }
         }
+        
+        #if os(watchOS)
+        WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
+        #endif
+    
     }
 }

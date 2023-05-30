@@ -98,6 +98,7 @@ struct ContentView: View {
     @ObservedObject private var bluetoothViewModel = BluetoothViewModel()
     @State private var selectedPeripheral: CBPeripheral?
     @State private var successMessage = ""
+    @State private var isDeviceConnected = false
     
     var body: some View {
         NavigationView {
@@ -109,11 +110,57 @@ struct ContentView: View {
                         bluetoothViewModel.connect(to: selectedPeripheral)
                         bluetoothViewModel.sendMessage()
                         successMessage = "Message sent successfully"
+                        isDeviceConnected = true
                     }) {
                         Text(peripheral)
                     }
                     .foregroundColor(.black)
                 }
+                
+                if let connectedPeripheral = selectedPeripheral, isDeviceConnected {
+                    Text("Connected Device: \(connectedPeripheral.name!)")
+                        .font(.headline)
+                    
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            // Handle up button action
+                        }) {
+                            Image(systemName: "arrow.up")
+                        }
+                        .padding()
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            // Handle down button action
+                        }) {
+                            Image(systemName: "arrow.down")
+                        }
+                        .padding()
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            // Handle left button action
+                        }) {
+                            Image(systemName: "arrow.left")
+                        }
+                        .padding()
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            // Handle right button action
+                        }) {
+                            Image(systemName: "arrow.right")
+                        }
+                        .padding()
+                        
+                        Spacer()
+                    }
+                }
+                
                 Text(successMessage)
                     .foregroundColor(.green)
             }

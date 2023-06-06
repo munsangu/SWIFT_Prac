@@ -159,6 +159,7 @@ struct ContentView: View {
                         
                         Spacer()
                     }
+                    .foregroundColor(.black)
                 }
                 
                 Text(successMessage)

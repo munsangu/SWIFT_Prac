@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		166CA6122A36C62400E1312A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166CA6112A36C62400E1312A /* AppDelegate.swift */; };
+		166CA6142A36C62400E1312A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166CA6132A36C62400E1312A /* SceneDelegate.swift */; };
+		166CA6162A36C62400E1312A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166CA6152A36C62400E1312A /* ViewController.swift */; };
+		166CA6192A36C62400E1312A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166CA6172A36C62400E1312A /* Main.storyboard */; };
+		166CA61B2A36C62500E1312A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166CA61A2A36C62500E1312A /* Assets.xcassets */; };
+		166CA61E2A36C62500E1312A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166CA61C2A36C62500E1312A /* LaunchScreen.storyboard */; };
+		166CA6262A36DBDD00E1312A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 166CA6252A36DBDD00E1312A /* GoogleService-Info.plist */; };
+		2A96D2336438F28EB70F0AC9 /* Pods_TossTimeAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1398CCC353E690CFDF25CDBD /* Pods_TossTimeAlert.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1398CCC353E690CFDF25CDBD /* Pods_TossTimeAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TossTimeAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		166CA60E2A36C62400E1312A /* TossTimeAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossTimeAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		166CA6112A36C62400E1312A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		166CA6132A36C62400E1312A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		166CA6152A36C62400E1312A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		166CA6182A36C62400E1312A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		166CA61A2A36C62500E1312A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		166CA61D2A36C62500E1312A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		166CA61F2A36C62500E1312A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166CA6252A36DBDD00E1312A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		166CA6272A36DC2100E1312A /* TossTimeAlert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TossTimeAlert.entitlements; sourceTree = "<group>"; };
+		34D4D4F824278D3ED756397B /* Pods-TossTimeAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TossTimeAlert.release.xcconfig"; path = "Target Support Files/Pods-TossTimeAlert/Pods-TossTimeAlert.release.xcconfig"; sourceTree = "<group>"; };
+		ACA3DE4A679BE2E7D4901A0B /* Pods-TossTimeAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TossTimeAlert.debug.xcconfig"; path = "Target Support Files/Pods-TossTimeAlert/Pods-TossTimeAlert.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		166CA60B2A36C62400E1312A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A96D2336438F28EB70F0AC9 /* Pods_TossTimeAlert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		166CA6052A36C62400E1312A = {
+			isa = PBXGroup;
+			children = (
+				166CA6102A36C62400E1312A /* TossTimeAlert */,
+				166CA60F2A36C62400E1312A /* Products */,
+				D54B1C775214C347DE31B401 /* Pods */,
+				F16476F91D571B92180D4544 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		166CA60F2A36C62400E1312A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				166CA60E2A36C62400E1312A /* TossTimeAlert.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		166CA6102A36C62400E1312A /* TossTimeAlert */ = {
+			isa = PBXGroup;
+			children = (
+				166CA6272A36DC2100E1312A /* TossTimeAlert.entitlements */,
+				166CA6112A36C62400E1312A /* AppDelegate.swift */,
+				166CA6132A36C62400E1312A /* SceneDelegate.swift */,
+				166CA6152A36C62400E1312A /* ViewController.swift */,
+				166CA6172A36C62400E1312A /* Main.storyboard */,
+				166CA61A2A36C62500E1312A /* Assets.xcassets */,
+				166CA61C2A36C62500E1312A /* LaunchScreen.storyboard */,
+				166CA61F2A36C62500E1312A /* Info.plist */,
+				166CA6252A36DBDD00E1312A /* GoogleService-Info.plist */,
+			);
+			path = TossTimeAlert;
+			sourceTree = "<group>";
+		};
+		D54B1C775214C347DE31B401 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACA3DE4A679BE2E7D4901A0B /* Pods-TossTimeAlert.debug.xcconfig */,
+				34D4D4F824278D3ED756397B /* Pods-TossTimeAlert.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F16476F91D571B92180D4544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1398CCC353E690CFDF25CDBD /* Pods_TossTimeAlert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		166CA60D2A36C62400E1312A /* TossTimeAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166CA6222A36C62500E1312A /* Build configuration list for PBXNativeTarget "TossTimeAlert" */;
+			buildPhases = (
+				2EC10F8FB1416E2ACCFEAF6D /* [CP] Check Pods Manifest.lock */,
+				166CA60A2A36C62400E1312A /* Sources */,
+				166CA60B2A36C62400E1312A /* Frameworks */,
+				166CA60C2A36C62400E1312A /* Resources */,
+				FFCD152975F00EB38EFF67AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TossTimeAlert;
+			productName = TossTimeAlert;
+			productReference = 166CA60E2A36C62400E1312A /* TossTimeAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		166CA6062A36C62400E1312A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					166CA60D2A36C62400E1312A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 166CA6092A36C62400E1312A /* Build configuration list for PBXProject "TossTimeAlert" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 166CA6052A36C62400E1312A;
+			productRefGroup = 166CA60F2A36C62400E1312A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				166CA60D2A36C62400E1312A /* TossTimeAlert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		166CA60C2A36C62400E1312A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166CA61E2A36C62500E1312A /* LaunchScreen.storyboard in Resources */,
+				166CA6262A36DBDD00E1312A /* GoogleService-Info.plist in Resources */,
+				166CA61B2A36C62500E1312A /* Assets.xcassets in Resources */,
+				166CA6192A36C62400E1312A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EC10F8FB1416E2ACCFEAF6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TossTimeAlert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFCD152975F00EB38EFF67AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TossTimeAlert/Pods-TossTimeAlert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TossTimeAlert/Pods-TossTimeAlert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TossTimeAlert/Pods-TossTimeAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		166CA60A2A36C62400E1312A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166CA6162A36C62400E1312A /* ViewController.swift in Sources */,
+				166CA6122A36C62400E1312A /* AppDelegate.swift in Sources */,
+				166CA6142A36C62400E1312A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		166CA6172A36C62400E1312A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166CA6182A36C62400E1312A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		166CA61C2A36C62500E1312A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166CA61D2A36C62500E1312A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		166CA6202A36C62500E1312A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		166CA6212A36C62500E1312A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		166CA6232A36C62500E1312A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA3DE4A679BE2E7D4901A0B /* Pods-TossTimeAlert.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TossTimeAlert/TossTimeAlert.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 48A5W8Z795;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TossTimeAlert/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "토스타임";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtisToss.TossTimeAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		166CA6242A36C62500E1312A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D4D4F824278D3ED756397B /* Pods-TossTimeAlert.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TossTimeAlert/TossTimeAlert.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 48A5W8Z795;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TossTimeAlert/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "토스타임";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtisToss.TossTimeAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		166CA6092A36C62400E1312A /* Build configuration list for PBXProject "TossTimeAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166CA6202A36C62500E1312A /* Debug */,
+				166CA6212A36C62500E1312A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		166CA6222A36C62500E1312A /* Build configuration list for PBXNativeTarget "TossTimeAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166CA6232A36C62500E1312A /* Debug */,
+				166CA6242A36C62500E1312A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 166CA6062A36C62400E1312A /* Project object */;
+}

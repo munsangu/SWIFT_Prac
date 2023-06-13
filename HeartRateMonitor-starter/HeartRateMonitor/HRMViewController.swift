@@ -60,10 +60,10 @@ extension HRMViewController: CBCentralManagerDelegate {
     heartRatePeripheral = peripheral
     heartRatePeripheral.delegate = self
     
-//    if peripheral.name == "QCY-T5" {
-//      central.connect(heartRatePeripheral)
-//      central.stopScan()
-//    }
+    if peripheral.name == "AB Shutter3       " {
+      central.connect(heartRatePeripheral)
+      central.stopScan()
+    }
 
   }
   

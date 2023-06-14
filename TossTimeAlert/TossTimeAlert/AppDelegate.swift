@@ -68,13 +68,19 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
     // Receive push notification(Foreground mode)
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        tossOpen()
+        let userInfo = notification.request.content.userInfo
+        if userInfo["gcm.notification.url"] != nil {
+            tossOpen()
+        }
         completionHandler([.list, .banner, .sound, .badge])
     }
     
     // Receive push notification(Background mode) & Click push notification
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        tossOpen()
+        let userInfo = response.notification.request.content.userInfo
+        if userInfo["gcm.notification.url"] != nil {
+            tossOpen()
+        }
         completionHandler()
     }
     
@@ -99,7 +105,6 @@ extension AppDelegate: MessagingDelegate {
             print("Failed to receive FCM Token.")
             return
         }
-        print(token)
         sendTokenToServer(token)
     }
     

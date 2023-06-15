@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fillSafeArea(position: .top, color: UIColor(red: 54 / 255, green: 174 / 255, blue: 228 / 255, alpha: 1.0))
+        fillSafeArea(position: .top, color: UIColor(red: 174 / 255, green: 226 / 255, blue: 255 / 255, alpha: 1.0))
         self.webViewSetting("https://wkwebview.run.goorm.site/index2.php")
     }
     

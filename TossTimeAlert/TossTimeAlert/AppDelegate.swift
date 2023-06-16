@@ -26,15 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
         
-        // FCM Current Registration Token Verification
-        Messaging.messaging().token { token, error in
-            if let error = error {
-                print("Error FCM Token: \(error.localizedDescription)")
-            } else if let token = token {
-                print(token)
-            }
-        }
-        
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
         UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, error in
             print("Error, Request Notifications Authrization: \(error.debugDescription)")
@@ -60,8 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         Messaging.messaging().apnsToken = deviceToken
     }
-    
-    
+        
 }
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
@@ -105,34 +95,36 @@ extension AppDelegate: MessagingDelegate {
             print("Failed to receive FCM Token.")
             return
         }
-        sendTokenToServer(token)
+        UserDefaults.standard.set(token, forKey: "fcmToken")
+//        sendTokenToServer(token)
     }
-    
-    func sendTokenToServer(_ token: String) {
-        let url = URL(string: "https://wkwebview.run.goorm.site/token.php")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        let postString = "token=\(token)"
-        request.httpBody = postString.data(using: .utf8)
         
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, let response = response as? HTTPURLResponse, error == nil else {
-                print("Error: \(error?.localizedDescription ?? "Unknown error")")
-                return
-            }
-            
-            if response.statusCode == 200 {
-                print("Value of FCM Token sent successfully")
-                // Handle the response from the server, if any
-                if let responseString = String(data: data, encoding: .utf8) {
-                    print("Server response: \(responseString)")
-                }
-            } else {
-                print("Error sending token: HTTP status code \(response.statusCode)")
-            }
-        }
-        task.resume()
-    }
+//    func sendTokenToServer(_ token: String) {
+//        let url = URL(string: "https://wkwebview.run.goorm.site/name.php?")!
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "POST"
+//        let postString = "token=\(token)"
+//        request.httpBody = postString.data(using: .utf8)
+//
+//        let task = URLSession.shared.dataTask(with: request) { _, response, error in
+//            guard let response = response as? HTTPURLResponse, error == nil else {
+//                print("Error: \(error?.localizedDescription ?? "Unknown error")")
+//                return
+//            }
+//
+//            if response.statusCode == 200 {
+//                print("Value of FCM Token sent successfully")
+//                // Handle the response from the server, if any
+////                if let responseString = String(data: data, encoding: .utf8) {
+////                    print("Server response: \(responseString)")
+////                }
+//            } else {
+//                print("Error sending token: HTTP status code \(response.statusCode)")
+//            }
+//        }
+//        task.resume()
+//
+//    }
     
     
 }

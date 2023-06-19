@@ -31,10 +31,7 @@
 	}
 
 	$fields = array(
-		'registration_ids' => array(
-			'FCM TOKEN',
-		),
-		// 'registration_ids' => $fcmToken,
+		'registration_ids' => $fcmToken,
 		'notification' => $pushContent,
 	);
 

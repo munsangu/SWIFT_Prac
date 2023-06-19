@@ -1,8 +1,11 @@
 <?php
 	$fcmToken = isset($_GET['fcmToken']) ? $_GET['fcmToken'] : '';
 
-	$conn = mysqli_connect('54.180.132.93:53103', 'admin', '123456', 'testdb');
+	$today = date("Y-m-d");
+
+	$conn = mysqli_connect('myAddress', 'ID', 'PASSWORD', 'DB');
 	$tokenSearch = "SELECT * FROM testtable WHERE token = '{$fcmToken}'";
+	
 	$result = mysqli_query($conn, $tokenSearch);
 
 	if ($result) {

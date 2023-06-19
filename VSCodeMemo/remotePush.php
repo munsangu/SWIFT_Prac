@@ -1,20 +1,24 @@
 <?php
 
 	$idxNum = $_GET['idx'];
+	$userName = $_GET['userName'];
 	$searchSQL = "";
+	$updateSQL = "";
 	$pushContent = array();
 
 	$conn = mysqli_connect('myAddress', 'ID', 'PASSWORD', 'DB');
 
 	if ($idxNum == -1){
 		$searchSQL = "SELECT * FROM testtable WHERE token != ''";
-		$pushContent = array('title' => '토스 타임💡', 'body' => "다들 Toss를 켜볼까요??📱",'sound' => 'default', 'url' => 'supertoss://toss/pay');
+		$pushContent = array('title' => '토스 타임💡', 'body' => "[{$userName}] 다들 Toss를 켜볼까요??📱",'sound' => 'default', 'url' => 'supertoss://toss/pay');
+		$updateSQL = "UPDATE alertCheckTable SET tossAlertUsed = 1, tossAlertFirstUserName = '{$userName}', tossAlertFirstDate = DATE_ADD(NOW(), INTERVAL 9 HOUR) WHERE idx = 1";
 	} else if ($idxNum == -2){
 		$searchSQL = "SELECT * FROM testtable WHERE token != ''";
-		$pushContent = array('title' => '점심 시간🍽️', 'body' => "밥 먹으러 가실까요??🍚", 'sound' => 'default');
+		$pushContent = array('title' => '점심 시간🍽️', 'body' => "[{$userName}] 밥 먹으러 가실까요??🍚", 'sound' => 'default');
+		$updateSQL = "UPDATE alertCheckTable SET lunchAlertUsed = 1, lunchAlertFirstUserName = '{$userName}', lunchAlertFirstDate = DATE_ADD(NOW(), INTERVAL 9 HOUR) WHERE idx = 1";
 	} else if ($idxNum == -3){
 		$searchSQL = "SELECT * FROM testtable WHERE token != ''";
-		$pushContent = array('title' => '접근 감지🚨', 'body' => "누군가가 사무실로 오고있네요??🐥", 'sound' => 'default');
+		$pushContent = array('title' => '접근 감지🚨', 'body' => "[{$userName}] 누군가가 사무실로 오고있네요??🐥", 'sound' => 'default');
 	}
 
 	$fcmToken = array();
@@ -53,18 +57,13 @@
 	curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($fields));
 
 	// Send the request
-	$result = curl_exec($curl);
+	$result2 = curl_exec($curl);
 
 	// Check for errors
-	if ($result === false) {
+	if ($result2 === false) {
 		die('cURL error: ' . curl_error($curl));
 	} else {
-		$sql = "
-			INSERT INTO testtable
-			(created) VALUES
-			(now())
-		";
-		mysqli_query($conn, $sql);
+		mysqli_query($conn, $updateSQL);
 	}
 
 	// Close the cURL handle
@@ -75,9 +74,3 @@
 	
 
 ?>
-
-<script>
-setTimeout(function() {
-  window.history.back();
-}, 500);
-</script>

@@ -1,24 +1,26 @@
 <?php
+	$conn = mysqli_connect('myAddress', 'ID', 'PASSWORD', 'DB');
 
 	$idxNum = $_GET['idx'];
 	$userName = $_GET['userName'];
+	$today = date("Y-m-d");
+
 	$searchSQL = "";
 	$updateSQL = "";
 	$pushContent = array();
 
-	$conn = mysqli_connect('myAddress', 'ID', 'PASSWORD', 'DB');
-
 	if ($idxNum == -1){
 		$searchSQL = "SELECT * FROM testtable WHERE token != ''";
-		$pushContent = array('title' => '토스 타임💡', 'body' => "[{$userName}] 다들 Toss를 켜볼까요??📱",'sound' => 'default', 'url' => 'supertoss://toss/pay');
-		$updateSQL = "UPDATE alertCheckTable SET tossAlertUsed = 1, tossAlertFirstUserName = '{$userName}', tossAlertFirstDate = DATE_ADD(NOW(), INTERVAL 9 HOUR) WHERE idx = 1";
+		$pushContent = array('title' => 'FisrstTitle', 'body' => "[{$userName}] FirstBody",'sound' => 'default', 'url' => 'supertoss://toss/pay');
+		$updateSQL = "UPDATE alertCheckTable SET tossAlertUsed = 1, tossAlertFirstUserName = '{$userName}', tossAlertFirstDate = NOW() WHERE DATE(date) = '{$today}'";
 	} else if ($idxNum == -2){
 		$searchSQL = "SELECT * FROM testtable WHERE token != ''";
-		$pushContent = array('title' => '점심 시간🍽️', 'body' => "[{$userName}] 밥 먹으러 가실까요??🍚", 'sound' => 'default');
-		$updateSQL = "UPDATE alertCheckTable SET lunchAlertUsed = 1, lunchAlertFirstUserName = '{$userName}', lunchAlertFirstDate = DATE_ADD(NOW(), INTERVAL 9 HOUR) WHERE idx = 1";
+		$pushContent = array('title' => 'SecondTitle', 'body' => "[{$userName}] SecondBody", 'sound' => 'default');
+		$updateSQL = "UPDATE alertCheckTable SET lunchAlertUsed = 1, lunchAlertFirstUserName = '{$userName}', lunchAlertFirstDate = NOW() WHERE DATE(date) = '{$today}'";
 	} else if ($idxNum == -3){
 		$searchSQL = "SELECT * FROM testtable WHERE token != ''";
-		$pushContent = array('title' => '접근 감지🚨', 'body' => "[{$userName}] 누군가가 사무실로 오고있네요??🐥", 'sound' => 'default');
+		$pushContent = array('title' => 'ThirdTitle', 'body' => "[{$userName}] ThirdBody", 'sound' => 'default');
+		$updateSQL = "INSERT INTO visitAlertCheck (visitAlertFirstUserName, date) VALUES ('{$userName}', now())"; 
 	}
 
 	$fcmToken = array();
@@ -34,7 +36,6 @@
 		'registration_ids' => $fcmToken,
 		'notification' => $pushContent,
 	);
-
 
 	$apiEndpoint = 'https://fcm.googleapis.com/fcm/send';
 	$authorizationKey = 'SERVER KEY';

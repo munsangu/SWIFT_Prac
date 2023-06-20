@@ -41,7 +41,7 @@
 	 <div class="user-login-box">
 		<span class="user-icon"></span>
 		<div class="user-name">토스타임</div>
-		<input class="user-password" name="name" type="text" placeholder="영어이름 축약형(e.g. hgd) 기입" maxlength="5"/>
+		<input class="user-password" name="name" type="text" placeholder="영어이름 축약형(e.g. HGD) 기입"/>
 		<input type="hidden" name="token" value="<?php echo $fcmToken; ?>">
 	   <button id="nameCheck">들어가기</button>
 	  </div>
@@ -55,14 +55,14 @@
 	
 	button.addEventListener("click", () => {
 			var inputValue = input.value
-			if (inputValue.length > 4 || !isEnglishLowercase(inputValue)) {
+			if (!isEnglishLowercase(inputValue)) {
 			alert("입력한 이름이 올바르지 않습니다");
 			event.preventDefault();
 		}
 	})
 	
 	function isEnglishLowercase(text) {
-	  var englishRegex = /^[a-z]+$/;
+	  var englishRegex = /^[A-Z]+$/;
 	  return englishRegex.test(text);
 	}	
 </script>

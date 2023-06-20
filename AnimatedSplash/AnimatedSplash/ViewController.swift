@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
        
+        self.view.backgroundColor = UIColor(cgColor: CGColor(red: 0 / 255, green: 156 / 255, blue: 255 / 255, alpha: 1.0))
+        
         self.mask = CALayer()
         self.mask!.contents = UIImage(named: "twitter")?.cgImage
         self.mask!.contentsGravity = CALayerContentsGravity.resizeAspect

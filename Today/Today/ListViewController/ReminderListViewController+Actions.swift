@@ -9,6 +9,10 @@ import UIKit
 
 extension ReminderListViewController {
     
+    @objc func eventStoreChanged(_ notification: NSNotification) {
+        reminderStoreChanged()
+    }
+    
     @objc func didPressDoneButton(_ sender: ReminderDoneButton) {
         guard let id = sender.id else { return }
         completeReminder(withId: id)
@@ -36,6 +40,7 @@ extension ReminderListViewController {
     @objc func didChangeListStyle(_ sender: UISegmentedControl) {
         listStyle = ReminderListStyle(rawValue: sender.selectedSegmentIndex) ?? .today
         updateSnapshot()
+        refreshBackground()
     }
     
 }

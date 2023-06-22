@@ -22,6 +22,7 @@
 		162958822A42C1350040CA4E /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162958812A42C1350040CA4E /* TextViewContentView.swift */; };
 		162958842A42C2230040CA4E /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162958832A42C2230040CA4E /* DatePickerContentView.swift */; };
 		162958862A42DA740040CA4E /* ReminderListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162958852A42DA740040CA4E /* ReminderListStyle.swift */; };
+		164935C92A43EA00009C68D0 /* EKReminder+Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164935C82A43EA00009C68D0 /* EKReminder+Reminder.swift */; };
 		167080AD2A427C49002E2221 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167080AC2A427C49002E2221 /* ReminderViewController.swift */; };
 		167080B02A427E3F002E2221 /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167080AF2A427E3F002E2221 /* ReminderViewController+Row.swift */; };
 		16910AFD2A417B5B00688DA2 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16910AFC2A417B5B00688DA2 /* Date+Today.swift */; };
@@ -29,6 +30,12 @@
 		16910B022A41843700688DA2 /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16910B012A41843700688DA2 /* UIColor+Today.swift */; };
 		16910B042A41892400688DA2 /* ReminderDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16910B032A41892400688DA2 /* ReminderDoneButton.swift */; };
 		16910B062A4189E400688DA2 /* ReminderListViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16910B052A4189E400688DA2 /* ReminderListViewController+Actions.swift */; };
+		16FD629B2A43BA510007DB4D /* ProgressHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FD629A2A43BA510007DB4D /* ProgressHeaderView.swift */; };
+		16FD629D2A43D4950007DB4D /* CAGradientLayer+ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FD629C2A43D4950007DB4D /* CAGradientLayer+ListStyle.swift */; };
+		16FD629F2A43D9EF0007DB4D /* TodayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FD629E2A43D9EF0007DB4D /* TodayError.swift */; };
+		16FD62A12A43DA5D0007DB4D /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FD62A02A43DA5D0007DB4D /* EKEventStore+AsyncFetch.swift */; };
+		16FD62A32A43DC490007DB4D /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FD62A22A43DC490007DB4D /* Reminder+EKReminder.swift */; };
+		16FD62A52A43DD460007DB4D /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FD62A42A43DD460007DB4D /* ReminderStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +56,7 @@
 		162958812A42C1350040CA4E /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
 		162958832A42C2230040CA4E /* DatePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
 		162958852A42DA740040CA4E /* ReminderListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyle.swift; sourceTree = "<group>"; };
+		164935C82A43EA00009C68D0 /* EKReminder+Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKReminder+Reminder.swift"; sourceTree = "<group>"; };
 		167080AC2A427C49002E2221 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		167080AF2A427E3F002E2221 /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
 		16910AFC2A417B5B00688DA2 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
@@ -56,6 +64,12 @@
 		16910B012A41843700688DA2 /* UIColor+Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Today.swift"; sourceTree = "<group>"; };
 		16910B032A41892400688DA2 /* ReminderDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDoneButton.swift; sourceTree = "<group>"; };
 		16910B052A4189E400688DA2 /* ReminderListViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+Actions.swift"; sourceTree = "<group>"; };
+		16FD629A2A43BA510007DB4D /* ProgressHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHeaderView.swift; sourceTree = "<group>"; };
+		16FD629C2A43D4950007DB4D /* CAGradientLayer+ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+ListStyle.swift"; sourceTree = "<group>"; };
+		16FD629E2A43D9EF0007DB4D /* TodayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayError.swift; sourceTree = "<group>"; };
+		16FD62A02A43DA5D0007DB4D /* EKEventStore+AsyncFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKEventStore+AsyncFetch.swift"; sourceTree = "<group>"; };
+		16FD62A22A43DC490007DB4D /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
+		16FD62A42A43DD460007DB4D /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,12 @@
 				1625C73D2A416F0D0030E998 /* Reminder.swift */,
 				16910B012A41843700688DA2 /* UIColor+Today.swift */,
 				162958852A42DA740040CA4E /* ReminderListStyle.swift */,
+				16FD629C2A43D4950007DB4D /* CAGradientLayer+ListStyle.swift */,
+				16FD629E2A43D9EF0007DB4D /* TodayError.swift */,
+				16FD62A02A43DA5D0007DB4D /* EKEventStore+AsyncFetch.swift */,
+				16FD62A22A43DC490007DB4D /* Reminder+EKReminder.swift */,
+				16FD62A42A43DD460007DB4D /* ReminderStore.swift */,
+				164935C82A43EA00009C68D0 /* EKReminder+Reminder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +163,7 @@
 				16910AFF2A417DB200688DA2 /* ReminderListViewController+DataSource.swift */,
 				16910B032A41892400688DA2 /* ReminderDoneButton.swift */,
 				16910B052A4189E400688DA2 /* ReminderListViewController+Actions.swift */,
+				16FD629A2A43BA510007DB4D /* ProgressHeaderView.swift */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
@@ -218,11 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FD629B2A43BA510007DB4D /* ProgressHeaderView.swift in Sources */,
 				1629587C2A42A2020040CA4E /* UIView+PinnedSubview.swift in Sources */,
 				162958772A4290360040CA4E /* ReminderViewController+Section.swift in Sources */,
 				162958842A42C2230040CA4E /* DatePickerContentView.swift in Sources */,
 				16910B022A41843700688DA2 /* UIColor+Today.swift in Sources */,
 				16910B062A4189E400688DA2 /* ReminderListViewController+Actions.swift in Sources */,
+				16FD629F2A43D9EF0007DB4D /* TodayError.swift in Sources */,
 				167080AD2A427C49002E2221 /* ReminderViewController.swift in Sources */,
 				162958862A42DA740040CA4E /* ReminderListStyle.swift in Sources */,
 				162958802A42A44E0040CA4E /* UIContentConfiguration+Stateless.swift in Sources */,
@@ -235,8 +258,13 @@
 				1625C7292A416B010030E998 /* AppDelegate.swift in Sources */,
 				162958792A429EC20040CA4E /* ReminderViewController+CellConfiguration.swift in Sources */,
 				1625C72B2A416B010030E998 /* SceneDelegate.swift in Sources */,
+				16FD62A32A43DC490007DB4D /* Reminder+EKReminder.swift in Sources */,
+				16FD62A12A43DA5D0007DB4D /* EKEventStore+AsyncFetch.swift in Sources */,
 				1625C73E2A416F0D0030E998 /* Reminder.swift in Sources */,
+				16FD629D2A43D4950007DB4D /* CAGradientLayer+ListStyle.swift in Sources */,
 				16910B002A417DB200688DA2 /* ReminderListViewController+DataSource.swift in Sources */,
+				16FD62A52A43DD460007DB4D /* ReminderStore.swift in Sources */,
+				164935C92A43EA00009C68D0 /* EKReminder+Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,11 +414,12 @@
 				DEVELOPMENT_TEAM = PG5FKL2L77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Today/Info.plist;
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Your reminders can help you stay on track.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,11 +447,12 @@
 				DEVELOPMENT_TEAM = PG5FKL2L77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Today/Info.plist;
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Your reminders can help you stay on track.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

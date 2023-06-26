@@ -14,15 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
         let appleIDProvider = ASAuthorizationAppleIDProvider()
         appleIDProvider.getCredentialState(forUserID: KeychainItem.currentUserIdentifier) { (credentialState, error) in
+            
             switch credentialState {
             case .authorized:
-                break // The Apple ID credential is valid.
+                break
             case .revoked, .notFound:
-                // The Apple ID credential is either revoked or was not found, so show the sign-in UI.
                 DispatchQueue.main.async {
                     self.window?.rootViewController?.showLoginViewController()
+                    print(self.window?.rootViewController)
                 }
             default:
                 break

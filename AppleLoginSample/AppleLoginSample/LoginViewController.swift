@@ -124,10 +124,11 @@ extension LoginViewController: ASAuthorizationControllerPresentationContextProvi
 extension UIViewController {
     
     func showLoginViewController() {
+        print("3")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         print("Storyboard: \(storyboard)")
         if let loginViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController {
-            print("1")
+            print("4")
             loginViewController.modalPresentationStyle = .fullScreen
             loginViewController.isModalInPresentation = true
             self.present(loginViewController, animated: true, completion: nil)

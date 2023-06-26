@@ -5,7 +5,6 @@
 //  Created by 문상우 on 2023/06/26.
 //
 
-import AuthenticationServices
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -28,22 +27,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        let appleIDProvider = ASAuthorizationAppleIDProvider()
-        appleIDProvider.getCredentialState(forUserID: "UserID") { ( credentialState, error) in
-            switch credentialState {
-            case .authorized:
-                print("Authorized")
-                DispatchQueue.main.async {
-                    self.window?.rootViewController = SignValidViewControll()
-                }
-            case .revoked:
-                print("Revoked")
-            case .notFound:
-                print("Not found")
-            default:
-                break
-            }
-        }
+        // Called when the scene has moved from an inactive state to an active state.
+        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
     }
 
     func sceneWillResignActive(_ scene: UIScene) {

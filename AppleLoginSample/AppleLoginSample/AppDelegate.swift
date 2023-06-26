@@ -5,14 +5,36 @@
 //  Created by 문상우 on 2023/06/26.
 //
 
+import AuthenticationServices
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        appleIDProvider.getCredentialState(forUserID: "UserID") { ( credentialState, error) in
+            switch credentialState {
+            case .authorized:
+                print("Authorized")
+                DispatchQueue.main.async {
+                    let signValidViewController = SignValidViewControll()
+                    window.rootViewController = signValidViewController
+                    window.makeKeyAndVisible()
+                }
+            case .revoked:
+                print("Revoked")
+            case .notFound:
+                print("Not found")
+            default:
+                break
+            }
+        }
         return true
     }
 

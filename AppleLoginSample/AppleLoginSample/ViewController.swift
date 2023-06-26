@@ -95,8 +95,8 @@ extension ViewController: ASAuthorizationControllerDelegate {
             }
             
             print("userIdentifier: \(userIdentifier)")
-            print("fullName: \(fullName!)")
-            print("email: \(email!)")
+            print("User Name : \((fullName?.givenName ?? "") + (fullName?.familyName ?? ""))")
+            print("email: \(email ?? "")")
             
             break
         case let passwordCredential as ASPasswordCredential:

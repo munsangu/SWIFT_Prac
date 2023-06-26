@@ -128,11 +128,10 @@ extension UIViewController {
         print("Storyboard: \(storyboard)")
         if let loginViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController {
             print("1")
-            loginViewController.modalPresentationStyle = .formSheet
+            loginViewController.modalPresentationStyle = .fullScreen
             loginViewController.isModalInPresentation = true
-            self.present(loginViewController, animated: true)
-        } else {
+            self.present(loginViewController, animated: true, completion: nil)
         }
     }
-    
 }
+

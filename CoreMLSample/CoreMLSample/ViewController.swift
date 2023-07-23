@@ -1,5 +1,6 @@
 import UIKit
 import CoreML
+import TensorFlowLite
 
 class ViewController: UIViewController {
     
@@ -50,18 +51,47 @@ class ViewController: UIViewController {
             .getCVPixelBuffer() else {
             return
         }
-        
         do {
-            let config = MLModelConfiguration()
-            let model = try GoogLeNetPlaces(configuration: config)
-            let input = GoogLeNetPlacesInput(sceneImage: buffer)
-            
-            let output = try model.prediction(input: input)
-            let text = output.sceneLabel
-            label.text = text
+            // Load your custom tflite model here
+            if let modelPath = Bundle.main.path(forResource: "model_edgetpu", ofType: "tflite") {
+                let model = try Interpreter(modelPath: modelPath)
+                
+                // Allocate input and output tensors (assuming your model has only 1 input and 1 output)
+                try model.allocateTensors()
+                
+                // Preprocess the input data (modify this part according to your custom model's input requirements)
+                // Here, we assume your model takes a single 224x224 RGB image as input
+                let inputTensor = try model.input(at: 0)
+                try inputTensor.copy(from: buffer.data)
+                
+                // Run inference
+                try model.invoke()
+                
+                // Read the output tensor (modify this part according to your custom model's output)
+                let outputTensor = try model.output(at: 0)
+                let outputData = [Float32](unsafeData: outputTensor.data) // Modify the data type if needed
+                
+                // Process the output data (modify this part according to your custom model's output)
+                // Here, we assume the output is a label index (an integer)
+                let predictedLabelIndex = outputData.argmax()
+                let text = "Label: \(predictedLabelIndex)"
+                label.text = text
+            }
         } catch {
             print("Error: \(error.localizedDescription)")
         }
+        
+        //        do {
+        //            let config = MLModelConfiguration()
+        //            let model = try GoogLeNetPlaces(configuration: config)
+        //            let input = GoogLeNetPlacesInput(sceneImage: buffer)
+        //
+        //            let output = try model.prediction(input: input)
+        //            let text = output.sceneLabel
+        //            label.text = text
+        //        } catch {
+        //            print("Error: \(error.localizedDescription)")
+        //        }
     }
     
 }
@@ -77,21 +107,21 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
-
+    
     /// Create and return CoreVideo Pixel Buffer
     /// - Returns: Pixel Buffer
     func getCVPixelBuffer() -> CVPixelBuffer? {
         guard let image = cgImage else {
-             return nil
+            return nil
         }
         let imageWidth = Int(image.width)
         let imageHeight = Int(image.height)
-
+        
         let attributes : [NSObject:AnyObject] = [
             kCVPixelBufferCGImageCompatibilityKey : true as AnyObject,
             kCVPixelBufferCGBitmapContextCompatibilityKey : true as AnyObject
         ]
-
+        
         var pxbuffer: CVPixelBuffer? = nil
         CVPixelBufferCreate(
             kCFAllocatorDefault,
@@ -101,12 +131,12 @@ extension UIImage {
             attributes as CFDictionary?,
             &pxbuffer
         )
-
+        
         if let _pxbuffer = pxbuffer {
             let flags = CVPixelBufferLockFlags(rawValue: 0)
             CVPixelBufferLockBaseAddress(_pxbuffer, flags)
             let pxdata = CVPixelBufferGetBaseAddress(_pxbuffer)
-
+            
             let rgbColorSpace = CGColorSpaceCreateDeviceRGB();
             let context = CGContext(
                 data: pxdata,
@@ -117,7 +147,7 @@ extension UIImage {
                 space: rgbColorSpace,
                 bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue
             )
-
+            
             if let _context = context {
                 _context.draw(
                     image,
@@ -133,11 +163,11 @@ extension UIImage {
                 CVPixelBufferUnlockBaseAddress(_pxbuffer, flags);
                 return nil
             }
-
+            
             CVPixelBufferUnlockBaseAddress(_pxbuffer, flags);
             return _pxbuffer;
         }
-
+        
         return nil
     }
 }

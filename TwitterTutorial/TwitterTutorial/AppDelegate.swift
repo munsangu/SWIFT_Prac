@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TwitterTutorial
-//
-//  Created by 문상우 on 2023/07/31.
-//
-
 import UIKit
 
 @main

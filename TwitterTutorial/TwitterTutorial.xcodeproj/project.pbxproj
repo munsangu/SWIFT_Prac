@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165273B02A78609C00ECD08A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165273AF2A78609B00ECD08A /* Extensions.swift */; };
 		16C79B9B2A77F59B002D4C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C79B9A2A77F59B002D4C56 /* AppDelegate.swift */; };
 		16C79B9D2A77F59B002D4C56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C79B9C2A77F59B002D4C56 /* SceneDelegate.swift */; };
 		16C79BA22A77F59B002D4C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C79BA02A77F59B002D4C56 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		165273AF2A78609B00ECD08A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		16C79B972A77F59B002D4C56 /* TwitterTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C79B9A2A77F59B002D4C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C79B9C2A77F59B002D4C56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		16C79BAE2A77F681002D4C56 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				165273AF2A78609B00ECD08A /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				16C79BBB2A77FBDE002D4C56 /* NotificationsController.swift in Sources */,
 				16C79BBD2A77FC0A002D4C56 /* ConversationsController.swift in Sources */,
 				16C79B9B2A77F59B002D4C56 /* AppDelegate.swift in Sources */,
+				165273B02A78609C00ECD08A /* Extensions.swift in Sources */,
 				16C79BB92A77FBAB002D4C56 /* ExploreController.swift in Sources */,
 				16C79B9D2A77F59B002D4C56 /* SceneDelegate.swift in Sources */,
 				16C79BB52A77F94D002D4C56 /* MainTabController.swift in Sources */,
@@ -359,6 +363,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,6 +396,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

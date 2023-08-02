@@ -44,6 +44,8 @@ class Utilities {
                                                     [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),
                                                      NSAttributedString.Key.foregroundColor: UIColor.white
                                                     ]))
+        
+        button.setAttributedTitle(attributedTitle, for: .normal)
         return button
     }
     

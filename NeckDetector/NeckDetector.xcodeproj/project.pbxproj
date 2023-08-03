@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		165261262A7619EA006745CF /* NeckDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 165261252A7619EA006745CF /* NeckDetector.mlmodel */; };
+		1652612C2A7625D1006745CF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652612B2A7625D1006745CF /* OnboardingViewController.swift */; };
+		845BDE43F94657C398207C98 /* Pods_NeckDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77854EDA7A9190DA27BC1D05 /* Pods_NeckDetector.framework */; };
+		E119E6B92A77BBA200ED873C /* TurtleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119E6B82A77BBA200ED873C /* TurtleViewController.swift */; };
+		E119E6DB2A77C8F100ED873C /* ResultOfTurtleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119E6DA2A77C8F100ED873C /* ResultOfTurtleViewController.swift */; };
+		E18B74A52A750FAB0079B43D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B74A42A750FAB0079B43D /* AppDelegate.swift */; };
+		E18B74A72A750FAB0079B43D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B74A62A750FAB0079B43D /* SceneDelegate.swift */; };
+		E18B74A92A750FAB0079B43D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B74A82A750FAB0079B43D /* ViewController.swift */; };
+		E18B74AC2A750FAB0079B43D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18B74AA2A750FAB0079B43D /* Main.storyboard */; };
+		E18B74AE2A750FAC0079B43D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18B74AD2A750FAC0079B43D /* Assets.xcassets */; };
+		E18B74B12A750FAC0079B43D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18B74AF2A750FAC0079B43D /* LaunchScreen.storyboard */; };
+		E19C744D2A7A5FC100919553 /* FinalCheckTurtleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C744C2A7A5FC100919553 /* FinalCheckTurtleViewController.swift */; };
+		E1A5BE3D2A763FC80046F9A1 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5BE3C2A763FC80046F9A1 /* AuthorizationViewController.swift */; };
+		E1A5BE3F2A764F880046F9A1 /* MakeNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5BE3E2A764F880046F9A1 /* MakeNicknameViewController.swift */; };
+		E1A5BE412A765E110046F9A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5BE402A765E110046F9A1 /* HomeViewController.swift */; };
+		E1A5BE432A76844E0046F9A1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5BE422A76844E0046F9A1 /* SettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		165261252A7619EA006745CF /* NeckDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NeckDetector.mlmodel; sourceTree = "<group>"; };
+		1652612B2A7625D1006745CF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		63B6B09E33B73A937BA59039 /* Pods-NeckDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeckDetector.debug.xcconfig"; path = "Target Support Files/Pods-NeckDetector/Pods-NeckDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		77854EDA7A9190DA27BC1D05 /* Pods_NeckDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeckDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E119E6B82A77BBA200ED873C /* TurtleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleViewController.swift; sourceTree = "<group>"; };
+		E119E6DA2A77C8F100ED873C /* ResultOfTurtleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOfTurtleViewController.swift; sourceTree = "<group>"; };
+		E18B74A12A750FAB0079B43D /* NeckDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeckDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18B74A42A750FAB0079B43D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E18B74A62A750FAB0079B43D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E18B74A82A750FAB0079B43D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E18B74AB2A750FAB0079B43D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E18B74AD2A750FAC0079B43D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E18B74B02A750FAC0079B43D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E18B74B22A750FAC0079B43D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19C744C2A7A5FC100919553 /* FinalCheckTurtleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCheckTurtleViewController.swift; sourceTree = "<group>"; };
+		E1A5BE3C2A763FC80046F9A1 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		E1A5BE3E2A764F880046F9A1 /* MakeNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNicknameViewController.swift; sourceTree = "<group>"; };
+		E1A5BE402A765E110046F9A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E1A5BE422A76844E0046F9A1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E621596B5E50776B2D4D0BE8 /* Pods-NeckDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeckDetector.release.xcconfig"; path = "Target Support Files/Pods-NeckDetector/Pods-NeckDetector.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E18B749E2A750FAB0079B43D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845BDE43F94657C398207C98 /* Pods_NeckDetector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AA904A28822E87D169E95DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B6B09E33B73A937BA59039 /* Pods-NeckDetector.debug.xcconfig */,
+				E621596B5E50776B2D4D0BE8 /* Pods-NeckDetector.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ABEC1DE59A69E657891C2ED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77854EDA7A9190DA27BC1D05 /* Pods_NeckDetector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E18B74982A750FAB0079B43D = {
+			isa = PBXGroup;
+			children = (
+				E18B74A32A750FAB0079B43D /* NeckDetector */,
+				E18B74A22A750FAB0079B43D /* Products */,
+				6AA904A28822E87D169E95DA /* Pods */,
+				ABEC1DE59A69E657891C2ED8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E18B74A22A750FAB0079B43D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E18B74A12A750FAB0079B43D /* NeckDetector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E18B74A32A750FAB0079B43D /* NeckDetector */ = {
+			isa = PBXGroup;
+			children = (
+				E18B74A42A750FAB0079B43D /* AppDelegate.swift */,
+				E1A5BE3C2A763FC80046F9A1 /* AuthorizationViewController.swift */,
+				E1A5BE402A765E110046F9A1 /* HomeViewController.swift */,
+				E1A5BE3E2A764F880046F9A1 /* MakeNicknameViewController.swift */,
+				1652612B2A7625D1006745CF /* OnboardingViewController.swift */,
+				E18B74A62A750FAB0079B43D /* SceneDelegate.swift */,
+				E1A5BE422A76844E0046F9A1 /* SettingsViewController.swift */,
+				E18B74A82A750FAB0079B43D /* ViewController.swift */,
+				E119E6B82A77BBA200ED873C /* TurtleViewController.swift */,
+				E119E6DA2A77C8F100ED873C /* ResultOfTurtleViewController.swift */,
+				E19C744C2A7A5FC100919553 /* FinalCheckTurtleViewController.swift */,
+				E18B74AA2A750FAB0079B43D /* Main.storyboard */,
+				165261252A7619EA006745CF /* NeckDetector.mlmodel */,
+				E18B74AD2A750FAC0079B43D /* Assets.xcassets */,
+				E18B74AF2A750FAC0079B43D /* LaunchScreen.storyboard */,
+				E18B74B22A750FAC0079B43D /* Info.plist */,
+			);
+			path = NeckDetector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E18B74A02A750FAB0079B43D /* NeckDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E18B74B52A750FAC0079B43D /* Build configuration list for PBXNativeTarget "NeckDetector" */;
+			buildPhases = (
+				3CB7886CA8F16811610930CE /* [CP] Check Pods Manifest.lock */,
+				E18B749D2A750FAB0079B43D /* Sources */,
+				E18B749E2A750FAB0079B43D /* Frameworks */,
+				E18B749F2A750FAB0079B43D /* Resources */,
+				E8742F403C275089B70624CC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeckDetector;
+			productName = NeckDetector;
+			productReference = E18B74A12A750FAB0079B43D /* NeckDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E18B74992A750FAB0079B43D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E18B74A02A750FAB0079B43D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E18B749C2A750FAB0079B43D /* Build configuration list for PBXProject "NeckDetector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E18B74982A750FAB0079B43D;
+			productRefGroup = E18B74A22A750FAB0079B43D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E18B74A02A750FAB0079B43D /* NeckDetector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E18B749F2A750FAB0079B43D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18B74B12A750FAC0079B43D /* LaunchScreen.storyboard in Resources */,
+				E18B74AE2A750FAC0079B43D /* Assets.xcassets in Resources */,
+				E18B74AC2A750FAB0079B43D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CB7886CA8F16811610930CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeckDetector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8742F403C275089B70624CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeckDetector/Pods-NeckDetector-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeckDetector/Pods-NeckDetector-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeckDetector/Pods-NeckDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E18B749D2A750FAB0079B43D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E119E6B92A77BBA200ED873C /* TurtleViewController.swift in Sources */,
+				E1A5BE3D2A763FC80046F9A1 /* AuthorizationViewController.swift in Sources */,
+				E18B74A92A750FAB0079B43D /* ViewController.swift in Sources */,
+				E18B74A52A750FAB0079B43D /* AppDelegate.swift in Sources */,
+				E1A5BE412A765E110046F9A1 /* HomeViewController.swift in Sources */,
+				1652612C2A7625D1006745CF /* OnboardingViewController.swift in Sources */,
+				E19C744D2A7A5FC100919553 /* FinalCheckTurtleViewController.swift in Sources */,
+				E18B74A72A750FAB0079B43D /* SceneDelegate.swift in Sources */,
+				165261262A7619EA006745CF /* NeckDetector.mlmodel in Sources */,
+				E1A5BE3F2A764F880046F9A1 /* MakeNicknameViewController.swift in Sources */,
+				E119E6DB2A77C8F100ED873C /* ResultOfTurtleViewController.swift in Sources */,
+				E1A5BE432A76844E0046F9A1 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E18B74AA2A750FAB0079B43D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E18B74AB2A750FAB0079B43D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E18B74AF2A750FAC0079B43D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E18B74B02A750FAC0079B43D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E18B74B32A750FAC0079B43D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E18B74B42A750FAC0079B43D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E18B74B62A750FAC0079B43D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6B09E33B73A937BA59039 /* Pods-NeckDetector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 48A5W8Z795;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeckDetector/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "꾸북이탐지기";
+				INFOPLIST_KEY_NSCameraUsageDescription = "꾸북이를 탐지하기 위해서는 카메라 접근 권한이 필요합니다";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mj.NeckDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E18B74B72A750FAC0079B43D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E621596B5E50776B2D4D0BE8 /* Pods-NeckDetector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 48A5W8Z795;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeckDetector/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "꾸북이탐지기";
+				INFOPLIST_KEY_NSCameraUsageDescription = "꾸북이를 탐지하기 위해서는 카메라 접근 권한이 필요합니다";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mj.NeckDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E18B749C2A750FAB0079B43D /* Build configuration list for PBXProject "NeckDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18B74B32A750FAC0079B43D /* Debug */,
+				E18B74B42A750FAC0079B43D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E18B74B52A750FAC0079B43D /* Build configuration list for PBXNativeTarget "NeckDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18B74B62A750FAC0079B43D /* Debug */,
+				E18B74B72A750FAC0079B43D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E18B74992A750FAB0079B43D /* Project object */;
+}

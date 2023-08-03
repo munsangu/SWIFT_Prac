@@ -1,0 +1,6 @@
+framework module Pods_NeckDetector {
+  umbrella header "Pods-NeckDetector-umbrella.h"
+
+  export *
+  module * { export * }
+}

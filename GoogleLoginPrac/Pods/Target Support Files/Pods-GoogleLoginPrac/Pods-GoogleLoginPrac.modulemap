@@ -1,0 +1,6 @@
+framework module Pods_GoogleLoginPrac {
+  umbrella header "Pods-GoogleLoginPrac-umbrella.h"
+
+  export *
+  module * { export * }
+}

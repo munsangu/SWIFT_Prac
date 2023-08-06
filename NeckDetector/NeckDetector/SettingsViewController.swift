@@ -1,23 +1,15 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-    
-    @IBOutlet weak var profileView: UIView!
-    @IBOutlet weak var userInfoView: UIView!
+
     @IBOutlet weak var settingsIcon: UIImageView!
-    
-    @IBOutlet weak var careStackView: UIStackView!
-    @IBOutlet weak var diaryStackVIew: UIStackView!
-    @IBOutlet weak var searchStackView: UIStackView!
-    @IBOutlet weak var shoppingStackView: UIStackView!
-    @IBOutlet weak var friendStackView: UIStackView!
-    @IBOutlet weak var badgeStackView: UIStackView!
-    
+    @IBOutlet weak var profileImageView: UIImageView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        profileView.layer.cornerRadius = profileView.bounds.height / 2
-        userInfoView.layer.cornerRadius = 16
+        profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
+//        userInfoView.layer.cornerRadius = 16
         
 //        let turtleViewTap = UITapGestureRecognizer(target: self, action: #selector(openNewViewController))
 //        turtleView.addGestureRecognizer(turtleViewTap)

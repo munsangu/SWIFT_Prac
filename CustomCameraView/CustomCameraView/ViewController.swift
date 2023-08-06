@@ -1,10 +1,10 @@
-import UIKit
-import CoreML
 import AVFoundation
+import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var previewPicutre: UIView!
+    @IBOutlet weak var previewPicture: UIView!
+    
     @IBOutlet weak var galleryButton: UIButton!
     @IBOutlet weak var reTakeButton: UIButton!
     @IBOutlet weak var takeAPhotoButton: UIButton!
@@ -31,11 +31,11 @@ class ViewController: UIViewController {
     var currentCamera: AVCaptureDevice? {
         return captureSession.inputs.compactMap { $0 as? AVCaptureDeviceInput }.first?.device
     }
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        checkImageView.image = UIImage(named: "checkMark")
+        checkImageView.image = UIImage(named: "image (6)")
         checkImageView.translatesAutoresizingMaskIntoConstraints = false
         
         label1.text = "정면 혹은 측면 상반신 촬영을"
@@ -62,11 +62,11 @@ class ViewController: UIViewController {
         stackView2.translatesAutoresizingMaskIntoConstraints = false
         stackView2.spacing = 20
         
-        fhdImageView.image = UIImage(named: "preview_img")
+        fhdImageView.image = UIImage(named: "image (5)")
         fhdImageView.translatesAutoresizingMaskIntoConstraints = false
         fhdImageView.contentMode = .scaleAspectFill
         
-        arrowImageView.image = UIImage(named: "arrowUP")
+        arrowImageView.image = UIImage(named: "image (7)")
         arrowImageView.translatesAutoresizingMaskIntoConstraints = false
         arrowImageView.contentMode = .scaleAspectFill
         
@@ -103,7 +103,7 @@ class ViewController: UIViewController {
             blackOverlayView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
 
-        closeButton.setImage(UIImage(named: "closeButton"), for: .normal)
+        closeButton.setImage(UIImage(named: "image (8)"), for: .normal)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
         NSLayoutConstraint.activate([
@@ -113,7 +113,7 @@ class ViewController: UIViewController {
             stackView2.leadingAnchor.constraint(equalTo: blackOverlayView.leadingAnchor, constant: 20),
             stackView2.trailingAnchor.constraint(equalTo: blackOverlayView.trailingAnchor, constant: -20),
             fhdImageView.centerXAnchor.constraint(equalTo: blackOverlayView.centerXAnchor),
-            fhdImageView.topAnchor.constraint(equalTo: blackOverlayView.topAnchor, constant: 145),
+            fhdImageView.centerYAnchor.constraint(equalTo: blackOverlayView.centerYAnchor),
             fhdImageView.leadingAnchor.constraint(equalTo: blackOverlayView.leadingAnchor, constant: 0),
             fhdImageView.trailingAnchor.constraint(equalTo: blackOverlayView.trailingAnchor, constant: 0),
             arrowImageView.bottomAnchor.constraint(equalTo: blackOverlayView.bottomAnchor, constant: -150),
@@ -135,6 +135,12 @@ class ViewController: UIViewController {
         DispatchQueue.global(qos: .userInitiated).async {
             self.captureSession.startRunning()
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        self.captureSession.stopRunning()
     }
     
     @objc func closeButtonTapped() {
@@ -164,8 +170,8 @@ class ViewController: UIViewController {
             
             let captureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
             captureVideoPreviewLayer.videoGravity = .resizeAspectFill
-            captureVideoPreviewLayer.frame = previewPicutre.bounds
-            previewPicutre.layer.addSublayer(captureVideoPreviewLayer)
+            captureVideoPreviewLayer.frame = previewPicture.bounds
+            previewPicture.layer.addSublayer(captureVideoPreviewLayer)
             
             DispatchQueue.global(qos: .userInitiated).async {
                 self.captureSession.startRunning()
@@ -182,7 +188,7 @@ class ViewController: UIViewController {
         self.present(imagePicker, animated: true)
     }
     
-    @IBAction func reTakeButtonTapped(_ sender: Any) {
+    @IBAction func reTakeButtonTapped(_ sender: UIButton) {
         galleryButton.alpha = 1
         takeAPhotoButton.alpha = 1
         changeCameraButton.alpha = 1
@@ -192,8 +198,11 @@ class ViewController: UIViewController {
         takeAPhotoImageView.image = nil
     }
     
+    @IBAction func okPhotoButtonTapped(_ sender: UIButton) {
+        print("Okay, Next!")
+    }
     
-    @IBAction func takeAPhotoButtonTapped(_ sender: Any) {
+    @IBAction func takeAPhotoButtonTapped(_ sender: UIButton) {
         galleryButton.alpha = 0
         takeAPhotoButton.alpha = 0
         changeCameraButton.alpha = 0
@@ -210,11 +219,8 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func okPhotoButtonTapped(_ sender: UIButton) {
-        print("Okay, Next!")
-    }
-    
-    @IBAction func changeCameraButtonTapped(_ sender: Any) {
+    @IBAction func changeCameraButtonTapped(_ sender: UIButton) {
+
         guard let currentCamera = currentCamera else { return }
         let authorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
         if authorizationStatus == .denied || authorizationStatus == .restricted {
@@ -246,136 +252,16 @@ class ViewController: UIViewController {
         captureSession.commitConfiguration()
     }
     
-    private func analyzeImage(image: UIImage?) {
-        guard let buffer = image?.resize(size: CGSize(width: 299, height: 299))?
-            .getCVPixelBuffer() else {
-            return
-        }
-        
-        do {
-            let config = MLModelConfiguration()
-            let model = try NeckDetector(configuration: config)
-            let input = NeckDetectorInput(image: buffer)
-
-            let output = try model.prediction(input: input)
-            let text = output.classLabel
-            
-            let formatter = NumberFormatter()
-            formatter.numberStyle = .decimal
-            formatter.maximumFractionDigits = 2
-            
-            var percentageDecimal: [String: Double] = [:]
-            for (className, probability) in output.classLabelProbs {
-                if let probabilityDecimal = formatter.number(from: "\(probability)")?.doubleValue {
-                    percentageDecimal[className] = probabilityDecimal
-                }
-            }
-            
-            UserDefaults.standard.set(text, forKey: "turtleLabel")
-            let multipleNumber = percentageDecimal[text]! * 100
-            let turnNumber = floor(multipleNumber) / 100
-            UserDefaults.standard.set(turnNumber, forKey: "turtlePercentage")
-            presentResultOfTurtleViewController()
-        } catch {
-            print("Error: \(error.localizedDescription)")
-        }
-    }
-    
-    private func presentResultOfTurtleViewController() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let resultOfTurtleViewController = storyboard.instantiateViewController(withIdentifier: "resultOfTurtleViewController") as? ResultOfTurtleViewController else {
-            return
-        }
-        resultOfTurtleViewController.modalPresentationStyle = .fullScreen
-        self.present(resultOfTurtleViewController, animated: true)
-    }
-    
-}
-
-extension UIImage {
-    func resize(size: CGSize) -> UIImage? {
-        UIGraphicsBeginImageContext(size)
-        draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image
-    }
-    
-    func getCVPixelBuffer() -> CVPixelBuffer? {
-        guard let image = cgImage else {
-            return nil
-        }
-        let imageWidth = Int(image.width)
-        let imageHeight = Int(image.height)
-        
-        let attributes : [NSObject:AnyObject] = [
-            kCVPixelBufferCGImageCompatibilityKey : true as AnyObject,
-            kCVPixelBufferCGBitmapContextCompatibilityKey : true as AnyObject
-        ]
-        
-        var pxbuffer: CVPixelBuffer? = nil
-        CVPixelBufferCreate(
-            kCFAllocatorDefault,
-            imageWidth,
-            imageHeight,
-            kCVPixelFormatType_32ARGB,
-            attributes as CFDictionary?,
-            &pxbuffer
-        )
-        
-        if let _pxbuffer = pxbuffer {
-            let flags = CVPixelBufferLockFlags(rawValue: 0)
-            CVPixelBufferLockBaseAddress(_pxbuffer, flags)
-            let pxdata = CVPixelBufferGetBaseAddress(_pxbuffer)
-            
-            let rgbColorSpace = CGColorSpaceCreateDeviceRGB();
-            let context = CGContext(
-                data: pxdata,
-                width: imageWidth,
-                height: imageHeight,
-                bitsPerComponent: 8,
-                bytesPerRow: CVPixelBufferGetBytesPerRow(_pxbuffer),
-                space: rgbColorSpace,
-                bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue
-            )
-            
-            if let _context = context {
-                _context.draw(
-                    image,
-                    in: CGRect.init(
-                        x: 0,
-                        y: 0,
-                        width: imageWidth,
-                        height: imageHeight
-                    )
-                )
-            }
-            else {
-                CVPixelBufferUnlockBaseAddress(_pxbuffer, flags);
-                return nil
-            }
-            
-            CVPixelBufferUnlockBaseAddress(_pxbuffer, flags);
-            return _pxbuffer;
-        }
-        
-        return nil
-    }
 }
 
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true)
-    }
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selectedImage = info[.originalImage] as? UIImage {
             takeAPhotoImageView.image = selectedImage
             takeAPhotoImageView.contentMode = .scaleAspectFill
-            takeAPhotoImageView.frame = previewPicutre.bounds
+            takeAPhotoImageView.frame = previewPicture.bounds
             takeAPhotoImageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            previewPicutre.addSubview(takeAPhotoImageView)
+            previewPicture.addSubview(takeAPhotoImageView)
             
             galleryButton.alpha = 0
             takeAPhotoButton.alpha = 0
@@ -384,9 +270,11 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
             okPhotoButton.alpha = 1
         }
         picker.dismiss(animated: true, completion: nil)
-
     }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension ViewController: AVCapturePhotoCaptureDelegate {
@@ -400,9 +288,9 @@ extension ViewController: AVCapturePhotoCaptureDelegate {
             DispatchQueue.main.async {
                 self.takeAPhotoImageView.image = capturedImage
                 self.takeAPhotoImageView.contentMode = .scaleAspectFill
-                self.takeAPhotoImageView.frame = self.previewPicutre.bounds
+                self.takeAPhotoImageView.frame = self.previewPicture.bounds
                 self.takeAPhotoImageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-                self.previewPicutre.addSubview(self.takeAPhotoImageView)
+                self.previewPicture.addSubview(self.takeAPhotoImageView)
             }
         }
     }

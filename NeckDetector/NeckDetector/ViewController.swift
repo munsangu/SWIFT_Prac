@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var changeCameraButton: UIButton!
     
     let takeAPhotoImageView = UIImageView()
+    var takeAPhotoImage = UIImage()
     
     let closeButton = UIButton()
     let blackOverlayView = UIView()
@@ -211,7 +212,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func okPhotoButtonTapped(_ sender: UIButton) {
-        print("Okay, Next!")
+        analyzeImage(image: takeAPhotoImage)
     }
     
     @IBAction func changeCameraButtonTapped(_ sender: Any) {
@@ -403,6 +404,7 @@ extension ViewController: AVCapturePhotoCaptureDelegate {
                 self.takeAPhotoImageView.frame = self.previewPicutre.bounds
                 self.takeAPhotoImageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
                 self.previewPicutre.addSubview(self.takeAPhotoImageView)
+                self.takeAPhotoImage = capturedImage
             }
         }
     }

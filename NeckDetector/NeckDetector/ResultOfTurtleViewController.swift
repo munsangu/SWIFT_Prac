@@ -3,6 +3,10 @@ import DGCharts
 
 class ResultOfTurtleViewController: UIViewController, ChartViewDelegate {
     
+    @IBOutlet weak var nextButton: UIButton!
+    
+    @IBOutlet weak var turtlePercentLabel: UILabel!
+    
     @IBOutlet weak var chartContainerView: UIView!
     var pieChart = PieChartView()
     var resultOfPercentage = UserDefaults.standard.float(forKey: "turtlePercentage") // 0 ~ 100
@@ -10,7 +14,9 @@ class ResultOfTurtleViewController: UIViewController, ChartViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nextButton.layer.cornerRadius = 16
         pieChart.delegate = self
+        turtlePercentLabel.text = "\(String(Int(resultOfPercentage * 100)))%"
         
         self.configurePieChart()
     }
@@ -38,7 +44,6 @@ class ResultOfTurtleViewController: UIViewController, ChartViewDelegate {
         view.addSubview(pieChart)
     }
     
-    // animation 3s
     func configurePieChart() {
         
         let dataEntries = [
@@ -53,7 +58,7 @@ class ResultOfTurtleViewController: UIViewController, ChartViewDelegate {
         
         pieChart.data = data
         pieChart.legend.enabled = false
-        
+                
         pieChart.animate(xAxisDuration: 3, yAxisDuration: 3)
         
         dataEntries[0].value = Double(resultOfPercentage * 100)

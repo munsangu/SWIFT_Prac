@@ -12,6 +12,8 @@
 		16781E9E2A7E390E001BB0F4 /* OnboardingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16781E9D2A7E390E001BB0F4 /* OnboardingFirst.swift */; };
 		16781EA02A7E391C001BB0F4 /* OnboardingSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16781E9F2A7E391C001BB0F4 /* OnboardingSecond.swift */; };
 		16781EA22A7E3928001BB0F4 /* OnboardingThird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16781EA12A7E3928001BB0F4 /* OnboardingThird.swift */; };
+		16C30BAF2A7FEF55005C0FE1 /* TotalSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C30BAE2A7FEF55005C0FE1 /* TotalSettingViewController.swift */; };
+		16F1B4AC2A7FEE1A00A6956F /* ReTouchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F1B4AB2A7FEE1A00A6956F /* ReTouchingViewController.swift */; };
 		845BDE43F94657C398207C98 /* Pods_NeckDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77854EDA7A9190DA27BC1D05 /* Pods_NeckDetector.framework */; };
 		E119E6B92A77BBA200ED873C /* TurtleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119E6B82A77BBA200ED873C /* TurtleViewController.swift */; };
 		E119E6DB2A77C8F100ED873C /* ResultOfTurtleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119E6DA2A77C8F100ED873C /* ResultOfTurtleViewController.swift */; };
@@ -25,7 +27,6 @@
 		E1A5BE3D2A763FC80046F9A1 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5BE3C2A763FC80046F9A1 /* AuthorizationViewController.swift */; };
 		E1A5BE3F2A764F880046F9A1 /* MakeNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5BE3E2A764F880046F9A1 /* MakeNicknameViewController.swift */; };
 		E1A5BE412A765E110046F9A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5BE402A765E110046F9A1 /* HomeViewController.swift */; };
-		E1A5BE432A76844E0046F9A1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5BE422A76844E0046F9A1 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		16781E9F2A7E391C001BB0F4 /* OnboardingSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSecond.swift; sourceTree = "<group>"; };
 		16781EA12A7E3928001BB0F4 /* OnboardingThird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThird.swift; sourceTree = "<group>"; };
 		16781EA32A7E65AC001BB0F4 /* NeckDetector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeckDetector.entitlements; sourceTree = "<group>"; };
+		16C30BAE2A7FEF55005C0FE1 /* TotalSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSettingViewController.swift; sourceTree = "<group>"; };
+		16F1B4AB2A7FEE1A00A6956F /* ReTouchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReTouchingViewController.swift; sourceTree = "<group>"; };
 		63B6B09E33B73A937BA59039 /* Pods-NeckDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeckDetector.debug.xcconfig"; path = "Target Support Files/Pods-NeckDetector/Pods-NeckDetector.debug.xcconfig"; sourceTree = "<group>"; };
 		77854EDA7A9190DA27BC1D05 /* Pods_NeckDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeckDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E119E6B82A77BBA200ED873C /* TurtleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +54,6 @@
 		E1A5BE3C2A763FC80046F9A1 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		E1A5BE3E2A764F880046F9A1 /* MakeNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNicknameViewController.swift; sourceTree = "<group>"; };
 		E1A5BE402A765E110046F9A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E1A5BE422A76844E0046F9A1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E621596B5E50776B2D4D0BE8 /* Pods-NeckDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeckDetector.release.xcconfig"; path = "Target Support Files/Pods-NeckDetector/Pods-NeckDetector.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,15 @@
 				16781EA12A7E3928001BB0F4 /* OnboardingThird.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		16F1B4AA2A7FEDF700A6956F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				16F1B4AB2A7FEE1A00A6956F /* ReTouchingViewController.swift */,
+				16C30BAE2A7FEF55005C0FE1 /* TotalSettingViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		6AA904A28822E87D169E95DA /* Pods */ = {
@@ -118,12 +129,12 @@
 			children = (
 				16781EA32A7E65AC001BB0F4 /* NeckDetector.entitlements */,
 				16781E9C2A7E38F5001BB0F4 /* Onboarding */,
+				16F1B4AA2A7FEDF700A6956F /* Settings */,
 				E18B74A42A750FAB0079B43D /* AppDelegate.swift */,
 				E1A5BE3C2A763FC80046F9A1 /* AuthorizationViewController.swift */,
 				E1A5BE402A765E110046F9A1 /* HomeViewController.swift */,
 				E1A5BE3E2A764F880046F9A1 /* MakeNicknameViewController.swift */,
 				E18B74A62A750FAB0079B43D /* SceneDelegate.swift */,
-				E1A5BE422A76844E0046F9A1 /* SettingsViewController.swift */,
 				E18B74A82A750FAB0079B43D /* ViewController.swift */,
 				E119E6B82A77BBA200ED873C /* TurtleViewController.swift */,
 				E119E6DA2A77C8F100ED873C /* ResultOfTurtleViewController.swift */,
@@ -252,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F1B4AC2A7FEE1A00A6956F /* ReTouchingViewController.swift in Sources */,
 				E119E6B92A77BBA200ED873C /* TurtleViewController.swift in Sources */,
 				E1A5BE3D2A763FC80046F9A1 /* AuthorizationViewController.swift in Sources */,
 				E18B74A92A750FAB0079B43D /* ViewController.swift in Sources */,
@@ -259,6 +271,7 @@
 				E1A5BE412A765E110046F9A1 /* HomeViewController.swift in Sources */,
 				1652612C2A7625D1006745CF /* OnboardingViewController.swift in Sources */,
 				16781EA02A7E391C001BB0F4 /* OnboardingSecond.swift in Sources */,
+				16C30BAF2A7FEF55005C0FE1 /* TotalSettingViewController.swift in Sources */,
 				16781E9E2A7E390E001BB0F4 /* OnboardingFirst.swift in Sources */,
 				E19C744D2A7A5FC100919553 /* FinalCheckTurtleViewController.swift in Sources */,
 				E18B74A72A750FAB0079B43D /* SceneDelegate.swift in Sources */,
@@ -266,7 +279,6 @@
 				E1A5BE3F2A764F880046F9A1 /* MakeNicknameViewController.swift in Sources */,
 				16781EA22A7E3928001BB0F4 /* OnboardingThird.swift in Sources */,
 				E119E6DB2A77C8F100ED873C /* ResultOfTurtleViewController.swift in Sources */,
-				E1A5BE432A76844E0046F9A1 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16038F112A818D920042EADD /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16038F102A818D920042EADD /* HistoryViewController.swift */; };
+		16038F132A818DCF0042EADD /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16038F122A818DCF0042EADD /* DiaryViewController.swift */; };
+		16038F152A818E130042EADD /* SearchNeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16038F142A818E130042EADD /* SearchNeckViewController.swift */; };
+		16038F172A818E4C0042EADD /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16038F162A818E4C0042EADD /* ShoppingViewController.swift */; };
 		165261262A7619EA006745CF /* NeckDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 165261252A7619EA006745CF /* NeckDetector.mlmodel */; };
 		1652612C2A7625D1006745CF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652612B2A7625D1006745CF /* OnboardingViewController.swift */; };
 		16781E9E2A7E390E001BB0F4 /* OnboardingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16781E9D2A7E390E001BB0F4 /* OnboardingFirst.swift */; };
@@ -30,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16038F102A818D920042EADD /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		16038F122A818DCF0042EADD /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		16038F142A818E130042EADD /* SearchNeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNeckViewController.swift; sourceTree = "<group>"; };
+		16038F162A818E4C0042EADD /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		165261252A7619EA006745CF /* NeckDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NeckDetector.mlmodel; sourceTree = "<group>"; };
 		1652612B2A7625D1006745CF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		16781E9D2A7E390E001BB0F4 /* OnboardingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirst.swift; sourceTree = "<group>"; };
@@ -85,6 +93,10 @@
 			children = (
 				16F1B4AB2A7FEE1A00A6956F /* ReTouchingViewController.swift */,
 				16C30BAE2A7FEF55005C0FE1 /* TotalSettingViewController.swift */,
+				16038F102A818D920042EADD /* HistoryViewController.swift */,
+				16038F122A818DCF0042EADD /* DiaryViewController.swift */,
+				16038F142A818E130042EADD /* SearchNeckViewController.swift */,
+				16038F162A818E4C0042EADD /* ShoppingViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -273,11 +285,15 @@
 				16781EA02A7E391C001BB0F4 /* OnboardingSecond.swift in Sources */,
 				16C30BAF2A7FEF55005C0FE1 /* TotalSettingViewController.swift in Sources */,
 				16781E9E2A7E390E001BB0F4 /* OnboardingFirst.swift in Sources */,
+				16038F132A818DCF0042EADD /* DiaryViewController.swift in Sources */,
 				E19C744D2A7A5FC100919553 /* FinalCheckTurtleViewController.swift in Sources */,
 				E18B74A72A750FAB0079B43D /* SceneDelegate.swift in Sources */,
 				165261262A7619EA006745CF /* NeckDetector.mlmodel in Sources */,
+				16038F172A818E4C0042EADD /* ShoppingViewController.swift in Sources */,
+				16038F152A818E130042EADD /* SearchNeckViewController.swift in Sources */,
 				E1A5BE3F2A764F880046F9A1 /* MakeNicknameViewController.swift in Sources */,
 				16781EA22A7E3928001BB0F4 /* OnboardingThird.swift in Sources */,
+				16038F112A818D920042EADD /* HistoryViewController.swift in Sources */,
 				E119E6DB2A77C8F100ED873C /* ResultOfTurtleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

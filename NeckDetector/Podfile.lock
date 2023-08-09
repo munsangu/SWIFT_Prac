@@ -2,17 +2,21 @@ PODS:
   - DGCharts (5.0.0):
     - DGCharts/Core (= 5.0.0)
   - DGCharts/Core (5.0.0)
+  - JTAppleCalendar (8.0.5)
 
 DEPENDENCIES:
   - DGCharts
+  - JTAppleCalendar
 
 SPEC REPOS:
   trunk:
     - DGCharts
+    - JTAppleCalendar
 
 SPEC CHECKSUMS:
   DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
+  JTAppleCalendar: 16c6501b22cb27520372c28b0a2e0b12c8d0cd73
 
-PODFILE CHECKSUM: 9aa89db5934f75671f65d4ac3a094646f41db014
+PODFILE CHECKSUM: 7d9bd681996f31bcb02ba0c267238892140f6521
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.12.0

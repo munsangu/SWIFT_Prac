@@ -42,7 +42,9 @@ class HomeViewController: UIViewController {
     }
     
     @objc func didTapSearchNeckViewTap() {
-        print("Let's search Neck!!")
+        if let searchNeckViewController = self.storyboard?.instantiateViewController(withIdentifier: "searchNeckViewController") {
+            navigationController?.pushViewController(searchNeckViewController, animated: true)
+        }
     }
     
     @objc func didTapdetectView() {

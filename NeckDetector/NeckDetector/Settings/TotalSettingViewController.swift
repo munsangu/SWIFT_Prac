@@ -4,6 +4,7 @@ class TotalSettingViewController: UIViewController {
 
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var recordView: UIView!
+    @IBOutlet weak var levelView: UILabel!
     
     @IBOutlet weak var historyStackView: UIStackView!
     @IBOutlet weak var diaryStackView: UIStackView!
@@ -21,6 +22,7 @@ class TotalSettingViewController: UIViewController {
 //        guard let userName = userName else { return }
 //        userNameLabel.text = "님"
         
+        levelView.layer.cornerRadius = 16
         recordView.layer.cornerRadius = 16
         
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(didHistoryStackView))
@@ -62,14 +64,13 @@ class TotalSettingViewController: UIViewController {
     }
     
     @objc func didHistoryStackView() {
-        print("1")
-        if let historyViewController = self.storyboard?.instantiateViewController(withIdentifier: "historyViewController") {
+        if let historyViewController = self.storyboard?.instantiateViewController(withIdentifier: "diaryViewController") {
             navigationController?.pushViewController(historyViewController, animated: true)
         }
     }
     
     @objc func didDiaryStackView() {
-        if let diaryViewController = self.storyboard?.instantiateViewController(withIdentifier: "diaryViewController") {
+        if let diaryViewController = self.storyboard?.instantiateViewController(withIdentifier: "historyViewController") {
             navigationController?.pushViewController(diaryViewController, animated: true)
         }
     }

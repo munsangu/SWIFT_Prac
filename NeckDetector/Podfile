@@ -7,4 +7,5 @@ target 'NeckDetector' do
 
   # Pods for NeckDetector
   pod 'DGCharts'
+  pod 'JTAppleCalendar'
 end

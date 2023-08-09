@@ -24,15 +24,20 @@ class FinalCheckTurtleViewController: UIViewController {
     }
     
     @IBAction func recheckButtonTapped(_ sender: UIButton) {
-//        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "cameraViewController") {
-//            vc.modalPresentationStyle = .fullScreen
-//            self.present(vc, animated: false)
-//        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let mainViewController = storyboard.instantiateViewController(withIdentifier: "mainTabBarController") as? HomeViewController {
+            mainViewController.modalPresentationStyle = .fullScreen
+            self.present(mainViewController, animated: false)
+        }
     }
     
-    
+  
     @IBAction func neckStretchButtonTapped(_ sender: UIButton) {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let   searchNeckViewController = storyboard.instantiateViewController(withIdentifier: "searchNeckViewController") as? SearchNeckViewController {
+            searchNeckViewController.modalPresentationStyle = .fullScreen
+            self.present(searchNeckViewController, animated: false)
+        }
     }
     
     

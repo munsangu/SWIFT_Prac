@@ -4,6 +4,16 @@ class SearchNeckViewController: UIViewController, UIScrollViewDelegate {
     
     let scrollView = UIScrollView()
     let menuStackView = UIStackView()
+    
+    @IBOutlet weak var exerciseView: UIView!
+    
+    let exerciseSectionTitles: [String] = ["어깨 펼 시간이에요!", "바른 자세를 위한 등근육 운동", "허리가 뻐근할 때 해볼까요?"]
+    
+    private let exerciseTable: UITableView = {
+        let table = UITableView(frame: .zero, style: .grouped)
+        table.register(ExerciseTableViewCell.self, forCellReuseIdentifier: ExerciseTableViewCell.identifier)
+        return table
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +30,12 @@ class SearchNeckViewController: UIViewController, UIScrollViewDelegate {
         
         self.setupScrollView()
         self.setupMenuButtons()
+        
+        exerciseTable.delegate = self
+        exerciseTable.dataSource = self
+        exerciseTable.backgroundColor = .clear
+        exerciseTable.separatorStyle = .none
+        exerciseView.addSubview(exerciseTable)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,6 +44,12 @@ class SearchNeckViewController: UIViewController, UIScrollViewDelegate {
         if let selectedButton = menuStackView.arrangedSubviews.first as? UIButton {
             addBottomBorderToButton(button: selectedButton)
         }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        exerciseTable.frame = exerciseView.bounds
     }
     
     func setupScrollView() {
@@ -108,14 +130,38 @@ class SearchNeckViewController: UIViewController, UIScrollViewDelegate {
     
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension SearchNeckViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return exerciseSectionTitles.count
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ExerciseTableViewCell.identifier, for: indexPath) as? ExerciseTableViewCell else { return UITableViewCell()}
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 250
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let header = view as? UITableViewHeaderFooterView else { return }
+        header.backgroundView?.backgroundColor = .clear
+        header.textLabel?.font = .systemFont(ofSize: 14, weight: .medium)
+        header.textLabel?.textColor = UIColor(cgColor: CGColor(red: 34 / 255, green: 34 / 255, blue: 34 / 255, alpha: 1))
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return exerciseSectionTitles[section]
     }
     
 }

@@ -18,8 +18,8 @@
 		16781EA22A7E3928001BB0F4 /* OnboardingThird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16781EA12A7E3928001BB0F4 /* OnboardingThird.swift */; };
 		16C30BAF2A7FEF55005C0FE1 /* TotalSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C30BAE2A7FEF55005C0FE1 /* TotalSettingViewController.swift */; };
 		16F1B4AC2A7FEE1A00A6956F /* ReTouchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F1B4AB2A7FEE1A00A6956F /* ReTouchingViewController.swift */; };
+		16F611402A851453001CC8A2 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6113F2A851453001CC8A2 /* ExerciseTableViewCell.swift */; };
 		845BDE43F94657C398207C98 /* Pods_NeckDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77854EDA7A9190DA27BC1D05 /* Pods_NeckDetector.framework */; };
-		E119E6B92A77BBA200ED873C /* TurtleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119E6B82A77BBA200ED873C /* TurtleViewController.swift */; };
 		E119E6DB2A77C8F100ED873C /* ResultOfTurtleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119E6DA2A77C8F100ED873C /* ResultOfTurtleViewController.swift */; };
 		E18B74A52A750FAB0079B43D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B74A42A750FAB0079B43D /* AppDelegate.swift */; };
 		E18B74A72A750FAB0079B43D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B74A62A750FAB0079B43D /* SceneDelegate.swift */; };
@@ -46,9 +46,9 @@
 		16781EA32A7E65AC001BB0F4 /* NeckDetector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeckDetector.entitlements; sourceTree = "<group>"; };
 		16C30BAE2A7FEF55005C0FE1 /* TotalSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSettingViewController.swift; sourceTree = "<group>"; };
 		16F1B4AB2A7FEE1A00A6956F /* ReTouchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReTouchingViewController.swift; sourceTree = "<group>"; };
+		16F6113F2A851453001CC8A2 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
 		63B6B09E33B73A937BA59039 /* Pods-NeckDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeckDetector.debug.xcconfig"; path = "Target Support Files/Pods-NeckDetector/Pods-NeckDetector.debug.xcconfig"; sourceTree = "<group>"; };
 		77854EDA7A9190DA27BC1D05 /* Pods_NeckDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeckDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E119E6B82A77BBA200ED873C /* TurtleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleViewController.swift; sourceTree = "<group>"; };
 		E119E6DA2A77C8F100ED873C /* ResultOfTurtleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOfTurtleViewController.swift; sourceTree = "<group>"; };
 		E18B74A12A750FAB0079B43D /* NeckDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeckDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18B74A42A750FAB0079B43D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +97,7 @@
 				16038F122A818DCF0042EADD /* DiaryViewController.swift */,
 				16038F142A818E130042EADD /* SearchNeckViewController.swift */,
 				16038F162A818E4C0042EADD /* ShoppingViewController.swift */,
+				16F6113F2A851453001CC8A2 /* ExerciseTableViewCell.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -148,7 +149,6 @@
 				E1A5BE3E2A764F880046F9A1 /* MakeNicknameViewController.swift */,
 				E18B74A62A750FAB0079B43D /* SceneDelegate.swift */,
 				E18B74A82A750FAB0079B43D /* ViewController.swift */,
-				E119E6B82A77BBA200ED873C /* TurtleViewController.swift */,
 				E119E6DA2A77C8F100ED873C /* ResultOfTurtleViewController.swift */,
 				E19C744C2A7A5FC100919553 /* FinalCheckTurtleViewController.swift */,
 				E18B74AA2A750FAB0079B43D /* Main.storyboard */,
@@ -276,8 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F1B4AC2A7FEE1A00A6956F /* ReTouchingViewController.swift in Sources */,
-				E119E6B92A77BBA200ED873C /* TurtleViewController.swift in Sources */,
 				E1A5BE3D2A763FC80046F9A1 /* AuthorizationViewController.swift in Sources */,
+				16F611402A851453001CC8A2 /* ExerciseTableViewCell.swift in Sources */,
 				E18B74A92A750FAB0079B43D /* ViewController.swift in Sources */,
 				E18B74A52A750FAB0079B43D /* AppDelegate.swift in Sources */,
 				E1A5BE412A765E110046F9A1 /* HomeViewController.swift in Sources */,
@@ -449,6 +449,7 @@
 				INFOPLIST_FILE = NeckDetector/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "꾸북이탐지기";
 				INFOPLIST_KEY_NSCameraUsageDescription = "꾸북이를 탐지하기 위해서는 카메라 접근 권한이 필요합니다";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -488,6 +489,7 @@
 				INFOPLIST_FILE = NeckDetector/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "꾸북이탐지기";
 				INFOPLIST_KEY_NSCameraUsageDescription = "꾸북이를 탐지하기 위해서는 카메라 접근 권한이 필요합니다";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

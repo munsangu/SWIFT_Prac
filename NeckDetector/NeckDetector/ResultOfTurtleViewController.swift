@@ -4,9 +4,7 @@ import DGCharts
 class ResultOfTurtleViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var nextButton: UIButton!
-    
     @IBOutlet weak var turtlePercentLabel: UILabel!
-    
     @IBOutlet weak var chartContainerView: UIView!
     var pieChart = PieChartView()
     var resultOfPercentage = UserDefaults.standard.float(forKey: "turtlePercentage") // 0 ~ 100

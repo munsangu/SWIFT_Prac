@@ -7,19 +7,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//
-//        let onboardingCompleted = UserDefaults.standard.bool(forKey: "onboardingCompleted")
-//
-//        if !onboardingCompleted {
-//            let onboardingViewController = OnboardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
-//            window?.rootViewController = onboardingViewController
-//        } else {
-//            let mainViewController = ViewController()
-//            window?.rootViewController = mainViewController
-//        }
-//
-//        window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if UserDefaults.standard.bool(forKey: "hasLaunchedBefore") {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainViewController = storyboard.instantiateViewController(withIdentifier: "mainTabBarController")
+            window?.rootViewController = mainViewController
+        } else {
+            let onboardingViewController = OnboardingViewController()
+            self.window?.rootViewController = onboardingViewController
+            UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+        }
+
+        window?.makeKeyAndVisible()
         return true
     }
 

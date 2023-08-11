@@ -14,13 +14,13 @@ class TotalSettingViewController: UIViewController {
     @IBOutlet weak var meetStackView: UIStackView!
     @IBOutlet weak var badgeStackView: UIStackView!
     
-//    let userName = UserDefaults.standard.string(forKey: "userNickName")
+    let userName = UserDefaults.standard.string(forKey: "userNickname")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        guard let userName = userName else { return }
-//        userNameLabel.text = "님"
+        guard let userName = userName else { return }
+        userNameLabel.text = "\(userName)님"
         
         levelView.layer.cornerRadius = 16
         recordView.layer.cornerRadius = 16

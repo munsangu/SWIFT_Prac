@@ -47,7 +47,7 @@ class FinalCheckTurtleViewController: UIViewController {
     @objc func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
         if let error = error {
             print("Error saving image: \(error.localizedDescription)")
-            self.showToast("이미지 저장 실패", withDuration: 2.0, delay: 1.0)
+            self.showToast("준비중입니다", withDuration: 2.0, delay: 1.0)
         } else {
             self.showToast("이미지 저장 완료", withDuration: 2.0, delay: 1.0)
         }

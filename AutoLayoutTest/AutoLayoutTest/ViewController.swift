@@ -36,6 +36,36 @@ class ViewController: UIViewController {
         self.layoutTrait(traitCollection: UIScreen.main.traitCollection)
     }
     
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        if (self.traitCollection.verticalSizeClass != previousTraitCollection?.verticalSizeClass || self.traitCollection.horizontalSizeClass != previousTraitCollection?.horizontalSizeClass) {
+            print("Device traitCollection이 변경됨")
+        }
+
+        switch traitCollection.horizontalSizeClass {
+        case .compact:
+              print("가로가 compact인 경우!")
+        case .regular:
+            print("가로가 regular인 경우!")
+        case .unspecified:
+            break
+        @unknown default:
+            break
+        }
+
+        switch traitCollection.verticalSizeClass {
+        case .compact:
+              print("세로가 compact인 경우!")
+        case .regular:
+            print("세로가 regular인 경우!")
+        case .unspecified:
+            break
+        @unknown default:
+            break
+        }
+    }
+    
     func setupUI() {
         view.addSubview(viewContainer)
         view.addSubview(image1)

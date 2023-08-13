@@ -443,7 +443,7 @@
 				CODE_SIGN_ENTITLEMENTS = NeckDetector/NeckDetector.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = PG5FKL2L77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NeckDetector/Info.plist;
@@ -483,7 +483,7 @@
 				CODE_SIGN_ENTITLEMENTS = NeckDetector/NeckDetector.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = PG5FKL2L77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NeckDetector/Info.plist;

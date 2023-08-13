@@ -58,33 +58,38 @@ class TotalSettingViewController: UIViewController {
     }
     
     @IBAction func retouchButtonTapped(_ sender: UIButton) {
-        if let retouchingViewController = self.storyboard?.instantiateViewController(withIdentifier: "retouchingViewController") {
-            navigationController?.pushViewController(retouchingViewController, animated: true)
-        }
+        self.showToast("준비중입니다", withDuration: 2.0, delay: 1.0)
+//        if let retouchingViewController = self.storyboard?.instantiateViewController(withIdentifier: "retouchingViewController") {
+//            navigationController?.pushViewController(retouchingViewController, animated: true)
+//        }
     }
     
     @objc func didHistoryStackView() {
-        if let historyViewController = self.storyboard?.instantiateViewController(withIdentifier: "diaryViewController") {
-            navigationController?.pushViewController(historyViewController, animated: true)
-        }
+        self.showToast("준비중입니다", withDuration: 2.0, delay: 1.0)
+//        if let historyViewController = self.storyboard?.instantiateViewController(withIdentifier: "diaryViewController") {
+//            navigationController?.pushViewController(historyViewController, animated: true)
+//        }
     }
     
     @objc func didDiaryStackView() {
-        if let diaryViewController = self.storyboard?.instantiateViewController(withIdentifier: "historyViewController") {
-            navigationController?.pushViewController(diaryViewController, animated: true)
-        }
+        self.showToast("준비중입니다", withDuration: 2.0, delay: 1.0)
+//        if let diaryViewController = self.storyboard?.instantiateViewController(withIdentifier: "historyViewController") {
+//            navigationController?.pushViewController(diaryViewController, animated: true)
+//        }
     }
     
     @objc func didSearchNeckStackView() {
-        if let searchNeckViewController = self.storyboard?.instantiateViewController(withIdentifier: "searchNeckViewController") {
-            navigationController?.pushViewController(searchNeckViewController, animated: true)
-        }
+        self.showToast("준비중입니다", withDuration: 2.0, delay: 1.0)
+//        if let searchNeckViewController = self.storyboard?.instantiateViewController(withIdentifier: "searchNeckViewController") {
+//            navigationController?.pushViewController(searchNeckViewController, animated: true)
+//        }
     }
 
     @objc func didShoppingStackView() {
-        if let shoppingViewController = self.storyboard?.instantiateViewController(withIdentifier: "shoppingViewController") {
-            navigationController?.pushViewController(shoppingViewController, animated: true)
-        }
+        self.showToast("준비중입니다", withDuration: 2.0, delay: 1.0)
+//        if let shoppingViewController = self.storyboard?.instantiateViewController(withIdentifier: "shoppingViewController") {
+//            navigationController?.pushViewController(shoppingViewController, animated: true)
+//        }
     }
     
     @objc func didMeetStackView() {

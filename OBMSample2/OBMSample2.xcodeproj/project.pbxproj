@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E121745C2AD50C1B0096AB2B /* BurgerMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121745B2AD50C1B0096AB2B /* BurgerMenuView.swift */; };
+		E16C925D2ACE52A000C7F003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C925C2ACE52A000C7F003 /* AppDelegate.swift */; };
+		E16C925F2ACE52A000C7F003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C925E2ACE52A000C7F003 /* SceneDelegate.swift */; };
+		E16C92612ACE52A000C7F003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C92602ACE52A000C7F003 /* ViewController.swift */; };
+		E16C92642ACE52A000C7F003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16C92622ACE52A000C7F003 /* Main.storyboard */; };
+		E16C92662ACE52A200C7F003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16C92652ACE52A200C7F003 /* Assets.xcassets */; };
+		E16C92692ACE52A200C7F003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16C92672ACE52A200C7F003 /* LaunchScreen.storyboard */; };
+		E16C92982ACE5B0C00C7F003 /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92722ACE5B0C00C7F003 /* Pretendard-Medium.ttf */; };
+		E16C92992ACE5B0C00C7F003 /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92732ACE5B0C00C7F003 /* Pretendard-Black.ttf */; };
+		E16C929A2ACE5B0C00C7F003 /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92742ACE5B0C00C7F003 /* Pretendard-Regular.ttf */; };
+		E16C929B2ACE5B0C00C7F003 /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92752ACE5B0C00C7F003 /* Pretendard-Thin.ttf */; };
+		E16C929C2ACE5B0C00C7F003 /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92762ACE5B0C00C7F003 /* Pretendard-ExtraLight.ttf */; };
+		E16C929D2ACE5B0C00C7F003 /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92772ACE5B0C00C7F003 /* Pretendard-SemiBold.ttf */; };
+		E16C929E2ACE5B0C00C7F003 /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92782ACE5B0C00C7F003 /* Pretendard-ExtraBold.ttf */; };
+		E16C929F2ACE5B0C00C7F003 /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92792ACE5B0C00C7F003 /* Pretendard-Bold.ttf */; };
+		E16C92A02ACE5B0C00C7F003 /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C927A2ACE5B0C00C7F003 /* Pretendard-Light.ttf */; };
+		E16C92A12ACE5B0C00C7F003 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C927C2ACE5B0C00C7F003 /* Oswald-Bold.ttf */; };
+		E16C92A22ACE5B0C00C7F003 /* Oswald-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C927D2ACE5B0C00C7F003 /* Oswald-SemiBold.ttf */; };
+		E16C92A32ACE5B0C00C7F003 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C927E2ACE5B0C00C7F003 /* Oswald-Medium.ttf */; };
+		E16C92A42ACE5B0C00C7F003 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C927F2ACE5B0C00C7F003 /* Oswald-Regular.ttf */; };
+		E16C92A52ACE5B0C00C7F003 /* Oswald-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92802ACE5B0C00C7F003 /* Oswald-ExtraLight.ttf */; };
+		E16C92A62ACE5B0C00C7F003 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92812ACE5B0C00C7F003 /* Oswald-Light.ttf */; };
+		E16C92A72ACE5B0C00C7F003 /* SUIT-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92832ACE5B0C00C7F003 /* SUIT-Medium.ttf */; };
+		E16C92A82ACE5B0C00C7F003 /* SUIT-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92842ACE5B0C00C7F003 /* SUIT-SemiBold.ttf */; };
+		E16C92A92ACE5B0C00C7F003 /* SUIT-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92852ACE5B0C00C7F003 /* SUIT-Light.ttf */; };
+		E16C92AA2ACE5B0C00C7F003 /* SUIT-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92862ACE5B0C00C7F003 /* SUIT-ExtraLight.ttf */; };
+		E16C92AB2ACE5B0C00C7F003 /* SUIT-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92872ACE5B0C00C7F003 /* SUIT-Heavy.ttf */; };
+		E16C92AC2ACE5B0C00C7F003 /* SUIT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92882ACE5B0C00C7F003 /* SUIT-Bold.ttf */; };
+		E16C92AD2ACE5B0C00C7F003 /* SUIT-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92892ACE5B0C00C7F003 /* SUIT-Thin.ttf */; };
+		E16C92AE2ACE5B0C00C7F003 /* SUIT-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C928A2ACE5B0C00C7F003 /* SUIT-Regular.ttf */; };
+		E16C92AF2ACE5B0C00C7F003 /* SUIT-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C928B2ACE5B0C00C7F003 /* SUIT-ExtraBold.ttf */; };
+		E16C92B02ACE5B0C00C7F003 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C928D2ACE5B0C00C7F003 /* Rubik-Bold.ttf */; };
+		E16C92B12ACE5B0C00C7F003 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C928E2ACE5B0C00C7F003 /* Rubik-Light.ttf */; };
+		E16C92B22ACE5B0C00C7F003 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C928F2ACE5B0C00C7F003 /* Rubik-Medium.ttf */; };
+		E16C92B32ACE5B0C00C7F003 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92902ACE5B0C00C7F003 /* Rubik-Black.ttf */; };
+		E16C92B42ACE5B0C00C7F003 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92912ACE5B0C00C7F003 /* Rubik-SemiBold.ttf */; };
+		E16C92B52ACE5B0C00C7F003 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92922ACE5B0C00C7F003 /* Rubik-ExtraBold.ttf */; };
+		E16C92B62ACE5B0C00C7F003 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16C92932ACE5B0C00C7F003 /* Rubik-Regular.ttf */; };
+		E16C92B72ACE5B0C00C7F003 /* OBD_DATA_MT_IND.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C92952ACE5B0C00C7F003 /* OBD_DATA_MT_IND.swift */; };
+		E16C92B82ACE5B0C00C7F003 /* OBD_DATA_CV_IND.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C92962ACE5B0C00C7F003 /* OBD_DATA_CV_IND.swift */; };
+		E16C92B92ACE5B0C00C7F003 /* OBD_DATA_E_IND.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16C92972ACE5B0C00C7F003 /* OBD_DATA_E_IND.swift */; };
+		E1D40D642AD8CC2F00EFFD9F /* OBDCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1D40D622AD8CC2F00EFFD9F /* OBDCoreData.xcdatamodeld */; };
+		E1D40D672AD8CC5600EFFD9F /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D40D652AD8CC5600EFFD9F /* Entity+CoreDataClass.swift */; };
+		E1D40D682AD8CC5600EFFD9F /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D40D662AD8CC5600EFFD9F /* Entity+CoreDataProperties.swift */; };
+		E1E801652AD8BC8400CA77E5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E801642AD8BC8400CA77E5 /* CoreDataStack.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E121745B2AD50C1B0096AB2B /* BurgerMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerMenuView.swift; sourceTree = "<group>"; };
+		E16C92592ACE52A000C7F003 /* OBMSample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBMSample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16C925C2ACE52A000C7F003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E16C925E2ACE52A000C7F003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E16C92602ACE52A000C7F003 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E16C92632ACE52A000C7F003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E16C92652ACE52A200C7F003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E16C92682ACE52A200C7F003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E16C926A2ACE52A200C7F003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16C92722ACE5B0C00C7F003 /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
+		E16C92732ACE5B0C00C7F003 /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
+		E16C92742ACE5B0C00C7F003 /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
+		E16C92752ACE5B0C00C7F003 /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
+		E16C92762ACE5B0C00C7F003 /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E16C92772ACE5B0C00C7F003 /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
+		E16C92782ACE5B0C00C7F003 /* Pretendard-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E16C92792ACE5B0C00C7F003 /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
+		E16C927A2ACE5B0C00C7F003 /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
+		E16C927C2ACE5B0C00C7F003 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		E16C927D2ACE5B0C00C7F003 /* Oswald-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-SemiBold.ttf"; sourceTree = "<group>"; };
+		E16C927E2ACE5B0C00C7F003 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
+		E16C927F2ACE5B0C00C7F003 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
+		E16C92802ACE5B0C00C7F003 /* Oswald-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E16C92812ACE5B0C00C7F003 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
+		E16C92832ACE5B0C00C7F003 /* SUIT-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Medium.ttf"; sourceTree = "<group>"; };
+		E16C92842ACE5B0C00C7F003 /* SUIT-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-SemiBold.ttf"; sourceTree = "<group>"; };
+		E16C92852ACE5B0C00C7F003 /* SUIT-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Light.ttf"; sourceTree = "<group>"; };
+		E16C92862ACE5B0C00C7F003 /* SUIT-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E16C92872ACE5B0C00C7F003 /* SUIT-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Heavy.ttf"; sourceTree = "<group>"; };
+		E16C92882ACE5B0C00C7F003 /* SUIT-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Bold.ttf"; sourceTree = "<group>"; };
+		E16C92892ACE5B0C00C7F003 /* SUIT-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Thin.ttf"; sourceTree = "<group>"; };
+		E16C928A2ACE5B0C00C7F003 /* SUIT-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Regular.ttf"; sourceTree = "<group>"; };
+		E16C928B2ACE5B0C00C7F003 /* SUIT-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E16C928D2ACE5B0C00C7F003 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		E16C928E2ACE5B0C00C7F003 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		E16C928F2ACE5B0C00C7F003 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		E16C92902ACE5B0C00C7F003 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		E16C92912ACE5B0C00C7F003 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		E16C92922ACE5B0C00C7F003 /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E16C92932ACE5B0C00C7F003 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		E16C92952ACE5B0C00C7F003 /* OBD_DATA_MT_IND.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBD_DATA_MT_IND.swift; sourceTree = "<group>"; };
+		E16C92962ACE5B0C00C7F003 /* OBD_DATA_CV_IND.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBD_DATA_CV_IND.swift; sourceTree = "<group>"; };
+		E16C92972ACE5B0C00C7F003 /* OBD_DATA_E_IND.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBD_DATA_E_IND.swift; sourceTree = "<group>"; };
+		E1D40D632AD8CC2F00EFFD9F /* OBDCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OBDCoreData.xcdatamodel; sourceTree = "<group>"; };
+		E1D40D652AD8CC5600EFFD9F /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E1D40D662AD8CC5600EFFD9F /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E1E801642AD8BC8400CA77E5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E16C92562ACE52A000C7F003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E16C92502ACE52A000C7F003 = {
+			isa = PBXGroup;
+			children = (
+				E1D40D652AD8CC5600EFFD9F /* Entity+CoreDataClass.swift */,
+				E1D40D662AD8CC5600EFFD9F /* Entity+CoreDataProperties.swift */,
+				E16C925B2ACE52A000C7F003 /* OBMSample2 */,
+				E16C925A2ACE52A000C7F003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E16C925A2ACE52A000C7F003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E16C92592ACE52A000C7F003 /* OBMSample2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E16C925B2ACE52A000C7F003 /* OBMSample2 */ = {
+			isa = PBXGroup;
+			children = (
+				E16C92702ACE5B0C00C7F003 /* Fonts */,
+				E16C92942ACE5B0C00C7F003 /* Parsing */,
+				E16C925C2ACE52A000C7F003 /* AppDelegate.swift */,
+				E121745B2AD50C1B0096AB2B /* BurgerMenuView.swift */,
+				E1E801642AD8BC8400CA77E5 /* CoreDataStack.swift */,
+				E16C925E2ACE52A000C7F003 /* SceneDelegate.swift */,
+				E16C92602ACE52A000C7F003 /* ViewController.swift */,
+				E16C92622ACE52A000C7F003 /* Main.storyboard */,
+				E16C92652ACE52A200C7F003 /* Assets.xcassets */,
+				E16C92672ACE52A200C7F003 /* LaunchScreen.storyboard */,
+				E16C926A2ACE52A200C7F003 /* Info.plist */,
+				E1D40D622AD8CC2F00EFFD9F /* OBDCoreData.xcdatamodeld */,
+			);
+			path = OBMSample2;
+			sourceTree = "<group>";
+		};
+		E16C92702ACE5B0C00C7F003 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E16C92712ACE5B0C00C7F003 /* Pretendard */,
+				E16C927B2ACE5B0C00C7F003 /* Oswald */,
+				E16C92822ACE5B0C00C7F003 /* SUIT */,
+				E16C928C2ACE5B0C00C7F003 /* Rubik */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E16C92712ACE5B0C00C7F003 /* Pretendard */ = {
+			isa = PBXGroup;
+			children = (
+				E16C92722ACE5B0C00C7F003 /* Pretendard-Medium.ttf */,
+				E16C92732ACE5B0C00C7F003 /* Pretendard-Black.ttf */,
+				E16C92742ACE5B0C00C7F003 /* Pretendard-Regular.ttf */,
+				E16C92752ACE5B0C00C7F003 /* Pretendard-Thin.ttf */,
+				E16C92762ACE5B0C00C7F003 /* Pretendard-ExtraLight.ttf */,
+				E16C92772ACE5B0C00C7F003 /* Pretendard-SemiBold.ttf */,
+				E16C92782ACE5B0C00C7F003 /* Pretendard-ExtraBold.ttf */,
+				E16C92792ACE5B0C00C7F003 /* Pretendard-Bold.ttf */,
+				E16C927A2ACE5B0C00C7F003 /* Pretendard-Light.ttf */,
+			);
+			path = Pretendard;
+			sourceTree = "<group>";
+		};
+		E16C927B2ACE5B0C00C7F003 /* Oswald */ = {
+			isa = PBXGroup;
+			children = (
+				E16C927C2ACE5B0C00C7F003 /* Oswald-Bold.ttf */,
+				E16C927D2ACE5B0C00C7F003 /* Oswald-SemiBold.ttf */,
+				E16C927E2ACE5B0C00C7F003 /* Oswald-Medium.ttf */,
+				E16C927F2ACE5B0C00C7F003 /* Oswald-Regular.ttf */,
+				E16C92802ACE5B0C00C7F003 /* Oswald-ExtraLight.ttf */,
+				E16C92812ACE5B0C00C7F003 /* Oswald-Light.ttf */,
+			);
+			path = Oswald;
+			sourceTree = "<group>";
+		};
+		E16C92822ACE5B0C00C7F003 /* SUIT */ = {
+			isa = PBXGroup;
+			children = (
+				E16C92832ACE5B0C00C7F003 /* SUIT-Medium.ttf */,
+				E16C92842ACE5B0C00C7F003 /* SUIT-SemiBold.ttf */,
+				E16C92852ACE5B0C00C7F003 /* SUIT-Light.ttf */,
+				E16C92862ACE5B0C00C7F003 /* SUIT-ExtraLight.ttf */,
+				E16C92872ACE5B0C00C7F003 /* SUIT-Heavy.ttf */,
+				E16C92882ACE5B0C00C7F003 /* SUIT-Bold.ttf */,
+				E16C92892ACE5B0C00C7F003 /* SUIT-Thin.ttf */,
+				E16C928A2ACE5B0C00C7F003 /* SUIT-Regular.ttf */,
+				E16C928B2ACE5B0C00C7F003 /* SUIT-ExtraBold.ttf */,
+			);
+			path = SUIT;
+			sourceTree = "<group>";
+		};
+		E16C928C2ACE5B0C00C7F003 /* Rubik */ = {
+			isa = PBXGroup;
+			children = (
+				E16C928D2ACE5B0C00C7F003 /* Rubik-Bold.ttf */,
+				E16C928E2ACE5B0C00C7F003 /* Rubik-Light.ttf */,
+				E16C928F2ACE5B0C00C7F003 /* Rubik-Medium.ttf */,
+				E16C92902ACE5B0C00C7F003 /* Rubik-Black.ttf */,
+				E16C92912ACE5B0C00C7F003 /* Rubik-SemiBold.ttf */,
+				E16C92922ACE5B0C00C7F003 /* Rubik-ExtraBold.ttf */,
+				E16C92932ACE5B0C00C7F003 /* Rubik-Regular.ttf */,
+			);
+			path = Rubik;
+			sourceTree = "<group>";
+		};
+		E16C92942ACE5B0C00C7F003 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				E16C92952ACE5B0C00C7F003 /* OBD_DATA_MT_IND.swift */,
+				E16C92962ACE5B0C00C7F003 /* OBD_DATA_CV_IND.swift */,
+				E16C92972ACE5B0C00C7F003 /* OBD_DATA_E_IND.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E16C92582ACE52A000C7F003 /* OBMSample2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E16C926D2ACE52A200C7F003 /* Build configuration list for PBXNativeTarget "OBMSample2" */;
+			buildPhases = (
+				E16C92552ACE52A000C7F003 /* Sources */,
+				E16C92562ACE52A000C7F003 /* Frameworks */,
+				E16C92572ACE52A000C7F003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBMSample2;
+			productName = OBMSample2;
+			productReference = E16C92592ACE52A000C7F003 /* OBMSample2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E16C92512ACE52A000C7F003 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E16C92582ACE52A000C7F003 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E16C92542ACE52A000C7F003 /* Build configuration list for PBXProject "OBMSample2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E16C92502ACE52A000C7F003;
+			productRefGroup = E16C925A2ACE52A000C7F003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E16C92582ACE52A000C7F003 /* OBMSample2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E16C92572ACE52A000C7F003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16C92A72ACE5B0C00C7F003 /* SUIT-Medium.ttf in Resources */,
+				E16C92A92ACE5B0C00C7F003 /* SUIT-Light.ttf in Resources */,
+				E16C92A52ACE5B0C00C7F003 /* Oswald-ExtraLight.ttf in Resources */,
+				E16C929D2ACE5B0C00C7F003 /* Pretendard-SemiBold.ttf in Resources */,
+				E16C92982ACE5B0C00C7F003 /* Pretendard-Medium.ttf in Resources */,
+				E16C92A62ACE5B0C00C7F003 /* Oswald-Light.ttf in Resources */,
+				E16C92A12ACE5B0C00C7F003 /* Oswald-Bold.ttf in Resources */,
+				E16C92B52ACE5B0C00C7F003 /* Rubik-ExtraBold.ttf in Resources */,
+				E16C92B42ACE5B0C00C7F003 /* Rubik-SemiBold.ttf in Resources */,
+				E16C92692ACE52A200C7F003 /* LaunchScreen.storyboard in Resources */,
+				E16C929A2ACE5B0C00C7F003 /* Pretendard-Regular.ttf in Resources */,
+				E16C92B32ACE5B0C00C7F003 /* Rubik-Black.ttf in Resources */,
+				E16C92B22ACE5B0C00C7F003 /* Rubik-Medium.ttf in Resources */,
+				E16C92B62ACE5B0C00C7F003 /* Rubik-Regular.ttf in Resources */,
+				E16C92662ACE52A200C7F003 /* Assets.xcassets in Resources */,
+				E16C92642ACE52A000C7F003 /* Main.storyboard in Resources */,
+				E16C92A42ACE5B0C00C7F003 /* Oswald-Regular.ttf in Resources */,
+				E16C92AC2ACE5B0C00C7F003 /* SUIT-Bold.ttf in Resources */,
+				E16C92A02ACE5B0C00C7F003 /* Pretendard-Light.ttf in Resources */,
+				E16C92992ACE5B0C00C7F003 /* Pretendard-Black.ttf in Resources */,
+				E16C929E2ACE5B0C00C7F003 /* Pretendard-ExtraBold.ttf in Resources */,
+				E16C929B2ACE5B0C00C7F003 /* Pretendard-Thin.ttf in Resources */,
+				E16C92AD2ACE5B0C00C7F003 /* SUIT-Thin.ttf in Resources */,
+				E16C92AE2ACE5B0C00C7F003 /* SUIT-Regular.ttf in Resources */,
+				E16C929C2ACE5B0C00C7F003 /* Pretendard-ExtraLight.ttf in Resources */,
+				E16C92AB2ACE5B0C00C7F003 /* SUIT-Heavy.ttf in Resources */,
+				E16C92A32ACE5B0C00C7F003 /* Oswald-Medium.ttf in Resources */,
+				E16C929F2ACE5B0C00C7F003 /* Pretendard-Bold.ttf in Resources */,
+				E16C92AA2ACE5B0C00C7F003 /* SUIT-ExtraLight.ttf in Resources */,
+				E16C92A82ACE5B0C00C7F003 /* SUIT-SemiBold.ttf in Resources */,
+				E16C92B12ACE5B0C00C7F003 /* Rubik-Light.ttf in Resources */,
+				E16C92B02ACE5B0C00C7F003 /* Rubik-Bold.ttf in Resources */,
+				E16C92A22ACE5B0C00C7F003 /* Oswald-SemiBold.ttf in Resources */,
+				E16C92AF2ACE5B0C00C7F003 /* SUIT-ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E16C92552ACE52A000C7F003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D40D642AD8CC2F00EFFD9F /* OBDCoreData.xcdatamodeld in Sources */,
+				E121745C2AD50C1B0096AB2B /* BurgerMenuView.swift in Sources */,
+				E16C92B72ACE5B0C00C7F003 /* OBD_DATA_MT_IND.swift in Sources */,
+				E16C92B92ACE5B0C00C7F003 /* OBD_DATA_E_IND.swift in Sources */,
+				E1D40D682AD8CC5600EFFD9F /* Entity+CoreDataProperties.swift in Sources */,
+				E16C92612ACE52A000C7F003 /* ViewController.swift in Sources */,
+				E1E801652AD8BC8400CA77E5 /* CoreDataStack.swift in Sources */,
+				E16C925D2ACE52A000C7F003 /* AppDelegate.swift in Sources */,
+				E16C925F2ACE52A000C7F003 /* SceneDelegate.swift in Sources */,
+				E1D40D672AD8CC5600EFFD9F /* Entity+CoreDataClass.swift in Sources */,
+				E16C92B82ACE5B0C00C7F003 /* OBD_DATA_CV_IND.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E16C92622ACE52A000C7F003 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E16C92632ACE52A000C7F003 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E16C92672ACE52A200C7F003 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E16C92682ACE52A200C7F003 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E16C926B2ACE52A200C7F003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E16C926C2ACE52A200C7F003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E16C926E2ACE52A200C7F003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48A5W8Z795;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OBMSample2/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtisOBD.OBMSample2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E16C926F2ACE52A200C7F003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48A5W8Z795;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OBMSample2/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtisOBD.OBMSample2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E16C92542ACE52A000C7F003 /* Build configuration list for PBXProject "OBMSample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E16C926B2ACE52A200C7F003 /* Debug */,
+				E16C926C2ACE52A200C7F003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E16C926D2ACE52A200C7F003 /* Build configuration list for PBXNativeTarget "OBMSample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E16C926E2ACE52A200C7F003 /* Debug */,
+				E16C926F2ACE52A200C7F003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1D40D622AD8CC2F00EFFD9F /* OBDCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1D40D632AD8CC2F00EFFD9F /* OBDCoreData.xcdatamodel */,
+			);
+			currentVersion = E1D40D632AD8CC2F00EFFD9F /* OBDCoreData.xcdatamodel */;
+			path = OBDCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E16C92512ACE52A000C7F003 /* Project object */;
+}
